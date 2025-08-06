@@ -1,0 +1,40 @@
+.about-contain{
+    position: relative;
+    text-align: center;
+}
+.about-heading{
+    font-size: 70px;
+    color: rgb(31, 30, 30);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.about-box{
+    border: 1px solid white;
+    padding: 10px 25px 30px;
+    max-width: 1000px;
+    margin-left: 100px;
+    background-color: black;
+}
+.about-subheading{
+    font-weight: bold;
+    font-size: 50px;
+}
+.about-content{
+    font-size: 20px;
+}
+.CV{
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
+    margin-top: 50px;
+    margin-right: 1070px;
+    display: inline-block;
+}
+.about-image{
+    margin-top: -500px;
+    margin-left: 950px;
+}
