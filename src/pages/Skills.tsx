@@ -1,7 +1,8 @@
 import { useRef, Suspense, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
-import { OrbitControls, useGLTF } from "@react-three/drei";
+import {  useGLTF } from "@react-three/drei";
+import "./Skills.css";
 
 function Html() {
   const groupRef = useRef<THREE.Group>(null);
@@ -24,14 +25,13 @@ function Html() {
   return (
     <group
       ref={groupRef}
-      position={[-6, 0, 0]} // This places the entire rotating object in space
-      onClick={() => window.open("https://www.w3schools.com/html/", '_blank')}
+      position={[-12, 0, 0]} // This places the entire rotating object in space
+      onClick={() => window.open("https://www.w3schools.com/html/", "_blank")}
     >
       <primitive object={scene} />
     </group>
   );
 }
-
 
 function Css() {
   const groupRef = useRef<THREE.Group>(null);
@@ -53,14 +53,13 @@ function Css() {
   return (
     <group
       ref={groupRef}
-      position={[-3, 0, 0]} // Your preferred spot
-      onClick={() => window.open("https://www.w3schools.com/css/", '_blank')}
+      position={[-8, 0, 0]} // Your preferred spot
+      onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
     </group>
   );
 }
-
 
 function Js() {
   const groupRef = useRef<THREE.Group>(null);
@@ -82,17 +81,16 @@ function Js() {
   return (
     <group
       ref={groupRef}
-      position={[-2, 0, 0]} // Your preferred spot
-      onClick={() => window.open("https://www.w3schools.com/css/", '_blank')}
+      position={[-4, 0, 0]} // Your preferred spot
+      onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
     </group>
   );
 }
 
-
-function Php(){
- const groupRef = useRef<THREE.Group>(null);
+function Php() {
+  const groupRef = useRef<THREE.Group>(null);
   const { scene } = useGLTF("/model/php.glb");
 
   useEffect(() => {
@@ -112,43 +110,15 @@ function Php(){
     <group
       ref={groupRef}
       position={[0, 0, 0]} // Your preferred spot
-      onClick={() => window.open("https://www.w3schools.com/css/", '_blank')}
+      onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
     </group>
   );
 }
 
-function Mongodb(){
- const groupRef = useRef<THREE.Group>(null);
-  const { scene } = useGLTF("/model/mongodb.glb");
-
-  useEffect(() => {
-    const box = new THREE.Box3().setFromObject(scene);
-    const center = new THREE.Vector3();
-    box.getCenter(center);
-    scene.position.sub(center);
-  }, [scene]);
-
-  useFrame(() => {
-    if (groupRef.current) {
-      groupRef.current.rotation.y += 0.01;
-    }
-  });
-
-  return (
-    <group
-      ref={groupRef}
-      position={[2, 0, 0]} // Your preferred spot
-      onClick={() => window.open("https://www.w3schools.com/css/", '_blank')}
-    >
-      <primitive object={scene} />
-    </group>
-  );
-}
-
-function React(){
- const groupRef = useRef<THREE.Group>(null);
+function React() {
+  const groupRef = useRef<THREE.Group>(null);
   const { scene } = useGLTF("/model/react.glb");
 
   useEffect(() => {
@@ -168,44 +138,17 @@ function React(){
     <group
       ref={groupRef}
       position={[4, 0, 0]} // Your preferred spot
-      onClick={() => window.open("https://www.w3schools.com/css/", '_blank')}
+      onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
     </group>
   );
 }
 
-function Kotlin(){
-const groupRef = useRef<THREE.Group>(null);
-  const { scene } = useGLTF("/model/kotlin.glb");
 
-  useEffect(() => {
-    const box = new THREE.Box3().setFromObject(scene);
-    const center = new THREE.Vector3();
-    box.getCenter(center);
-    scene.position.sub(center);
-  }, [scene]);
-
-  useFrame(() => {
-    if (groupRef.current) {
-      groupRef.current.rotation.y += 0.01;
-    }
-  });
-
-  return (
-    <group
-      ref={groupRef}
-      position={[6, 0, 0]} // Your preferred spot
-      onClick={() => window.open("https://www.w3schools.com/css/", '_blank')}
-    >
-      <primitive object={scene} />
-    </group>
-  );
-}
-
-function Expo(){
-const groupRef = useRef<THREE.Group>(null);
-  const { scene } = useGLTF("/model/expo.glb");
+function Csharp() {
+  const groupRef = useRef<THREE.Group>(null);
+  const { scene } = useGLTF("/model/csharp.glb");
 
   useEffect(() => {
     const box = new THREE.Box3().setFromObject(scene);
@@ -224,15 +167,248 @@ const groupRef = useRef<THREE.Group>(null);
     <group
       ref={groupRef}
       position={[8, 0, 0]} // Your preferred spot
-      onClick={() => window.open("https://www.w3schools.com/css/", '_blank')}
+      onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
     </group>
   );
 }
 
-function Blender(){
-const groupRef = useRef<THREE.Group>(null);
+
+function Kotlin() {
+  const groupRef = useRef<THREE.Group>(null);
+  const { scene } = useGLTF("/model/kotlin.glb");
+
+  useEffect(() => {
+    const box = new THREE.Box3().setFromObject(scene);
+    const center = new THREE.Vector3();
+    box.getCenter(center);
+    scene.position.sub(center);
+  }, [scene]);
+
+  useFrame(() => {
+    if (groupRef.current) {
+      groupRef.current.rotation.y += 0.01;
+    }
+  });
+
+  return (
+    <group
+      ref={groupRef}
+      position={[12, 0, 0]} // Your preferred spot
+      onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
+    >
+      <primitive object={scene} />
+    </group>
+  );
+}
+
+
+function Expo() {
+  const groupRef = useRef<THREE.Group>(null);
+  const { scene } = useGLTF("/model/expo.glb");
+
+  useEffect(() => {
+    const box = new THREE.Box3().setFromObject(scene);
+    const center = new THREE.Vector3();
+    box.getCenter(center);
+    scene.position.sub(center);
+  }, [scene]);
+
+  useFrame(() => {
+    if (groupRef.current) {
+      groupRef.current.rotation.y += 0.01;
+    }
+  });
+
+  return (
+    <group
+      ref={groupRef}
+      position={[16, 0, 0]} // Your preferred spot
+      onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
+    >
+      <primitive object={scene} />
+    </group>
+  );
+}
+
+
+function Mongodb() {
+  const groupRef = useRef<THREE.Group>(null);
+  const { scene } = useGLTF("/model/mongodb.glb");
+
+  useEffect(() => {
+    const box = new THREE.Box3().setFromObject(scene);
+    const center = new THREE.Vector3();
+    box.getCenter(center);
+    scene.position.sub(center);
+  }, [scene]);
+
+  useFrame(() => {
+    if (groupRef.current) {
+      groupRef.current.rotation.y += 0.01;
+    }
+  });
+
+  return (
+    <group
+      ref={groupRef}
+      position={[-12, -4, 0]} // Your preferred spot
+      onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
+    >
+      <primitive object={scene} />
+    </group>
+  );
+}
+
+
+function SQlite() {
+  const groupRef = useRef<THREE.Group>(null);
+  const { scene } = useGLTF("/model/sQlite.glb");
+
+  useEffect(() => {
+    const box = new THREE.Box3().setFromObject(scene);
+    const center = new THREE.Vector3();
+    box.getCenter(center);
+    scene.position.sub(center);
+  }, [scene]);
+
+  useFrame(() => {
+    if (groupRef.current) {
+      groupRef.current.rotation.y += 0.01;
+    }
+  });
+
+  return (
+    <group
+      ref={groupRef}
+      position={[-8, -4, 0]} // Your preferred spot
+      onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
+    >
+      <primitive object={scene} />
+    </group>
+  );
+}
+
+
+function Postman() {
+  const groupRef = useRef<THREE.Group>(null);
+  const { scene } = useGLTF("/model/postman.glb");
+
+  useEffect(() => {
+    const box = new THREE.Box3().setFromObject(scene);
+    const center = new THREE.Vector3();
+    box.getCenter(center);
+    scene.position.sub(center);
+  }, [scene]);
+
+  useFrame(() => {
+    if (groupRef.current) {
+      groupRef.current.rotation.y += 0.01;
+    }
+  });
+
+  return (
+    <group
+      ref={groupRef}
+      position={[-4, -4, 0]} // Your preferred spot
+      onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
+    >
+      <primitive object={scene} />
+    </group>
+  );
+}
+
+
+function Vscode() {
+  const groupRef = useRef<THREE.Group>(null);
+  const { scene } = useGLTF("/model/vscode.glb");
+
+  useEffect(() => {
+    const box = new THREE.Box3().setFromObject(scene);
+    const center = new THREE.Vector3();
+    box.getCenter(center);
+    scene.position.sub(center);
+  }, [scene]);
+
+  useFrame(() => {
+    if (groupRef.current) {
+      groupRef.current.rotation.y += 0.01;
+    }
+  });
+
+  return (
+    <group
+      ref={groupRef}
+      position={[0, -4, 0]} // Your preferred spot
+      onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
+    >
+      <primitive object={scene} />
+    </group>
+  );
+}
+
+
+function Android() {
+  const groupRef = useRef<THREE.Group>(null);
+  const { scene } = useGLTF("/model/android.glb");
+
+  useEffect(() => {
+    const box = new THREE.Box3().setFromObject(scene);
+    const center = new THREE.Vector3();
+    box.getCenter(center);
+    scene.position.sub(center);
+  }, [scene]);
+
+  useFrame(() => {
+    if (groupRef.current) {
+      groupRef.current.rotation.y += 0.01;
+    }
+  });
+
+  return (
+    <group
+      ref={groupRef}
+      position={[4, -4, 0]} // Your preferred spot
+      onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
+    >
+      <primitive object={scene} />
+    </group>
+  );
+}
+
+
+function VisualStudio() {
+  const groupRef = useRef<THREE.Group>(null);
+  const { scene } = useGLTF("/model/vs.glb");
+
+  useEffect(() => {
+    const box = new THREE.Box3().setFromObject(scene);
+    const center = new THREE.Vector3();
+    box.getCenter(center);
+    scene.position.sub(center);
+  }, [scene]);
+
+  useFrame(() => {
+    if (groupRef.current) {
+      groupRef.current.rotation.y += 0.01;
+    }
+  });
+
+  return (
+    <group
+      ref={groupRef}
+      position={[8, -4, 0]} // Your preferred spot
+      onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
+    >
+      <primitive object={scene} />
+    </group>
+  );
+}
+
+
+function Blender() {
+  const groupRef = useRef<THREE.Group>(null);
   const { scene } = useGLTF("/model/blender.glb");
 
   useEffect(() => {
@@ -251,16 +427,16 @@ const groupRef = useRef<THREE.Group>(null);
   return (
     <group
       ref={groupRef}
-      position={[-8, 0, 0]} // Your preferred spot
-      onClick={() => window.open("https://www.w3schools.com/css/", '_blank')}
+      position={[2, -8, 0]} // Your preferred spot
+      onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
     </group>
   );
 }
 
-function Figma(){
-const groupRef = useRef<THREE.Group>(null);
+function Figma() {
+  const groupRef = useRef<THREE.Group>(null);
   const { scene } = useGLTF("/model/figma.glb");
 
   useEffect(() => {
@@ -279,16 +455,16 @@ const groupRef = useRef<THREE.Group>(null);
   return (
     <group
       ref={groupRef}
-      position={[-10, 0, 0]} // Your preferred spot
-      onClick={() => window.open("https://www.w3schools.com/css/", '_blank')}
+      position={[6, -8, 0]} // Your preferred spot
+      onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
     </group>
   );
 }
 
-function Canva(){
-const groupRef = useRef<THREE.Group>(null);
+function Canva() {
+  const groupRef = useRef<THREE.Group>(null);
   const { scene } = useGLTF("/model/canva.glb");
 
   useEffect(() => {
@@ -307,8 +483,8 @@ const groupRef = useRef<THREE.Group>(null);
   return (
     <group
       ref={groupRef}
-      position={[0, 2, 0]} // Your preferred spot
-      onClick={() => window.open("https://www.w3schools.com/css/", '_blank')}
+      position={[10, -8, 0]} // Your preferred spot
+      onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
     </group>
@@ -316,27 +492,39 @@ const groupRef = useRef<THREE.Group>(null);
 }
 
 export default function Skills() {
-    return(
-        <div>
-            <Canvas camera={{ position: [0, 1, 20], fov: 10 }}>
-                <ambientLight intensity={1.6} />
-                <directionalLight position={[2, 2, 2]} />
-                <Suspense fallback={null}>
-                    <Html />
-                    <Css />
-                    <Js />
-                    <Php />
-                    <Mongodb />
-                    <React />
-                    <OrbitControls />
-                    <Kotlin />
-                    <Expo />
-                    <Blender />
-                    <Figma />
-                    <Canva />
-                    <OrbitControls />
-                </Suspense>
-            </Canvas>
-        </div>
-    )
+  return (
+    <div className="skill-contain">
+      <p className="skill-heading">My Skills</p>
+      <p className="skill-subheading">SKILLS</p>
+
+      <div className="skill-box">
+        <Canvas camera={{ position: [0, 1, 110], fov: 10 }}>
+          <ambientLight intensity={1.6} />
+          <directionalLight position={[2, 10, 2]} />
+          <Suspense fallback={null}>
+            <Html />
+            <Css />
+            <Js />
+            <Php />
+            <React />
+            <Csharp />
+            <Kotlin />
+            <Expo />
+
+            <Mongodb />
+            <SQlite />
+            <Postman />
+            <Vscode/>
+            <Android />
+            <VisualStudio />
+            
+            <Blender />
+            <Figma />
+            <Canva />
+
+          </Suspense>
+        </Canvas>
+      </div>
+    </div>
+  );
 }
