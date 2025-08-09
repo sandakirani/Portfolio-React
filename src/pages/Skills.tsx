@@ -1,7 +1,7 @@
 import { useRef, Suspense, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
-import {  useGLTF } from "@react-three/drei";
+import { useGLTF } from "@react-three/drei";
 import "./Skills.css";
 
 function Html() {
@@ -25,7 +25,7 @@ function Html() {
   return (
     <group
       ref={groupRef}
-      position={[-12, 0, 0]} // This places the entire rotating object in space
+      position={[-14, 0, 0]} // This places the entire rotating object in space
       onClick={() => window.open("https://www.w3schools.com/html/", "_blank")}
     >
       <primitive object={scene} />
@@ -53,7 +53,7 @@ function Css() {
   return (
     <group
       ref={groupRef}
-      position={[-8, 0, 0]} // Your preferred spot
+      position={[-10, 0, 0]} // Your preferred spot
       onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
@@ -81,7 +81,7 @@ function Js() {
   return (
     <group
       ref={groupRef}
-      position={[-4, 0, 0]} // Your preferred spot
+      position={[-6, 0, 0]} // Your preferred spot
       onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
@@ -109,7 +109,7 @@ function Php() {
   return (
     <group
       ref={groupRef}
-      position={[0, 0, 0]} // Your preferred spot
+      position={[-2, 0, 0]} // Your preferred spot
       onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
@@ -137,14 +137,13 @@ function React() {
   return (
     <group
       ref={groupRef}
-      position={[4, 0, 0]} // Your preferred spot
+      position={[2, 0, 0]} // Your preferred spot
       onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
     </group>
   );
 }
-
 
 function Csharp() {
   const groupRef = useRef<THREE.Group>(null);
@@ -166,14 +165,13 @@ function Csharp() {
   return (
     <group
       ref={groupRef}
-      position={[8, 0, 0]} // Your preferred spot
+      position={[6, 0, 0]} // Your preferred spot
       onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
     </group>
   );
 }
-
 
 function Kotlin() {
   const groupRef = useRef<THREE.Group>(null);
@@ -195,14 +193,13 @@ function Kotlin() {
   return (
     <group
       ref={groupRef}
-      position={[12, 0, 0]} // Your preferred spot
+      position={[10, 0, 0]} // Your preferred spot
       onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
     </group>
   );
 }
-
 
 function Expo() {
   const groupRef = useRef<THREE.Group>(null);
@@ -224,14 +221,13 @@ function Expo() {
   return (
     <group
       ref={groupRef}
-      position={[16, 0, 0]} // Your preferred spot
+      position={[14, 0, 0]} // Your preferred spot
       onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
     </group>
   );
 }
-
 
 function Mongodb() {
   const groupRef = useRef<THREE.Group>(null);
@@ -253,14 +249,13 @@ function Mongodb() {
   return (
     <group
       ref={groupRef}
-      position={[-12, -4, 0]} // Your preferred spot
+      position={[-10, -4, 0]} // Your preferred spot
       onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
     </group>
   );
 }
-
 
 function SQlite() {
   const groupRef = useRef<THREE.Group>(null);
@@ -282,14 +277,13 @@ function SQlite() {
   return (
     <group
       ref={groupRef}
-      position={[-8, -4, 0]} // Your preferred spot
+      position={[-6, -4, 0]} // Your preferred spot
       onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
     </group>
   );
 }
-
 
 function Postman() {
   const groupRef = useRef<THREE.Group>(null);
@@ -311,14 +305,13 @@ function Postman() {
   return (
     <group
       ref={groupRef}
-      position={[-4, -4, 0]} // Your preferred spot
+      position={[-2, -4, 0]} // Your preferred spot
       onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
     </group>
   );
 }
-
 
 function Vscode() {
   const groupRef = useRef<THREE.Group>(null);
@@ -340,14 +333,13 @@ function Vscode() {
   return (
     <group
       ref={groupRef}
-      position={[0, -4, 0]} // Your preferred spot
+      position={[2, -4, 0]} // Your preferred spot
       onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
     </group>
   );
 }
-
 
 function Android() {
   const groupRef = useRef<THREE.Group>(null);
@@ -369,14 +361,13 @@ function Android() {
   return (
     <group
       ref={groupRef}
-      position={[4, -4, 0]} // Your preferred spot
+      position={[6, -4, 0]} // Your preferred spot
       onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
     </group>
   );
 }
-
 
 function VisualStudio() {
   const groupRef = useRef<THREE.Group>(null);
@@ -398,14 +389,13 @@ function VisualStudio() {
   return (
     <group
       ref={groupRef}
-      position={[8, -4, 0]} // Your preferred spot
+      position={[10, -4, 0]} // Your preferred spot
       onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
     </group>
   );
 }
-
 
 function Blender() {
   const groupRef = useRef<THREE.Group>(null);
@@ -427,7 +417,7 @@ function Blender() {
   return (
     <group
       ref={groupRef}
-      position={[2, -8, 0]} // Your preferred spot
+      position={[-4, -8, 0]} // Your preferred spot
       onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
@@ -455,7 +445,7 @@ function Figma() {
   return (
     <group
       ref={groupRef}
-      position={[6, -8, 0]} // Your preferred spot
+      position={[0, -8, 0]} // Your preferred spot
       onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
@@ -483,7 +473,7 @@ function Canva() {
   return (
     <group
       ref={groupRef}
-      position={[10, -8, 0]} // Your preferred spot
+      position={[4, -8, 0]} // Your preferred spot
       onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
@@ -514,14 +504,13 @@ export default function Skills() {
             <Mongodb />
             <SQlite />
             <Postman />
-            <Vscode/>
+            <Vscode />
             <Android />
             <VisualStudio />
-            
+
             <Blender />
             <Figma />
             <Canva />
-
           </Suspense>
         </Canvas>
       </div>

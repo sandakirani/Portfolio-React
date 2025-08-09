@@ -1,0 +1,16 @@
+.certificates-contain{
+    position: relative;
+    text-align: center;
+    margin-top: 150px;
+}
+.certificates-heading{
+    font-weight: bold;
+    font-size: 50px;
+}
+.certificates-subheading{
+    font-size: 80px;
+    color: rgb(31, 30, 30);
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: -65px;
+}

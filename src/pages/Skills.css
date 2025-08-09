@@ -1,6 +1,7 @@
 .skill-contain{
     position: relative;
     text-align: center;
+    margin-top: 150px;
 }
 .skill-heading{
     font-weight: bold;
@@ -11,9 +12,9 @@
     color: rgb(31, 30, 30);
     font-weight: bold;
     margin-bottom: 20px;
-    margin-top: -85px;
+    margin-top: -65px;
 }
 .skill-box{
     height: 800px;
-    margin-top: -200px;
+    margin-top: -300px;
 }

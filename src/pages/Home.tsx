@@ -1,6 +1,8 @@
 import Home from "../components/Header";
 import About from "./About";
 import Skills from "./Skills";
+import Projects from "./Projects";
+import Certificates from "./Certificates";
 import my from "../assets/home.png";
 import "./Home.css";
 
@@ -31,6 +33,8 @@ export default function HomePage() {
 
       <About />
       <Skills />
+      <Projects />
+      <Certificates />
     </div>
   );
 }
