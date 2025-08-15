@@ -249,7 +249,7 @@ function Mongodb() {
   return (
     <group
       ref={groupRef}
-      position={[-10, -4, 0]} // Your preferred spot
+      position={[-12, -4, 0]} // Your preferred spot
       onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
@@ -277,7 +277,7 @@ function SQlite() {
   return (
     <group
       ref={groupRef}
-      position={[-6, -4, 0]} // Your preferred spot
+      position={[-8, -4, 0]} // Your preferred spot
       onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
@@ -305,7 +305,7 @@ function Postman() {
   return (
     <group
       ref={groupRef}
-      position={[-2, -4, 0]} // Your preferred spot
+      position={[-4, -4, 0]} // Your preferred spot
       onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
@@ -333,7 +333,7 @@ function Vscode() {
   return (
     <group
       ref={groupRef}
-      position={[2, -4, 0]} // Your preferred spot
+      position={[0, -4, 0]} // Your preferred spot
       onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
@@ -361,7 +361,7 @@ function Android() {
   return (
     <group
       ref={groupRef}
-      position={[6, -4, 0]} // Your preferred spot
+      position={[4, -4, 0]} // Your preferred spot
       onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
@@ -389,7 +389,35 @@ function VisualStudio() {
   return (
     <group
       ref={groupRef}
-      position={[10, -4, 0]} // Your preferred spot
+      position={[8, -4, 0]} // Your preferred spot
+      onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
+    >
+      <primitive object={scene} />
+    </group>
+  );
+}
+
+function Matlab() {
+  const groupRef = useRef<THREE.Group>(null);
+  const { scene } = useGLTF("/model/matlab.glb");
+
+  useEffect(() => {
+    const box = new THREE.Box3().setFromObject(scene);
+    const center = new THREE.Vector3();
+    box.getCenter(center);
+    scene.position.sub(center);
+  }, [scene]);
+
+  useFrame(() => {
+    if (groupRef.current) {
+      groupRef.current.rotation.y += 0.01;
+    }
+  });
+
+  return (
+    <group
+      ref={groupRef}
+      position={[12, -4, 0]} // Your preferred spot
       onClick={() => window.open("https://www.w3schools.com/css/", "_blank")}
     >
       <primitive object={scene} />
@@ -507,6 +535,7 @@ export default function Skills() {
             <Vscode />
             <Android />
             <VisualStudio />
+            <Matlab />
 
             <Blender />
             <Figma />

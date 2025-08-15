@@ -14,3 +14,59 @@
     margin-bottom: 20px;
     margin-top: -65px;
 }
+.certificate-list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin: 100px;
+}
+
+.certificate-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.left-image {
+  flex-direction: row;
+}
+
+.right-image {
+  flex-direction: row-reverse;
+}
+
+.certificate-image-container {
+  flex: 1;
+  min-width: 300px;
+}
+
+.certificate-image {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-text {
+  flex: 2;
+  min-width: 300px;
+}
+
+.certificate-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  justify-content: left;
+}
+
+.certificate-issue {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 3px;
+}
+
+.certificate-description {
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
