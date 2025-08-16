@@ -1,0 +1,88 @@
+.main-container {
+  background-color: rgb(0, 0, 0);
+  min-height: 100vh;
+  width: 100vw;
+  margin-top: 100px;
+}
+.hello-contain {
+  display: flex;
+  align-items: center;
+}
+.main-1 {
+  margin-left: 100px;
+  margin-top: 100px;
+}
+.hello {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 40px;
+  user-select: none;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.name-1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 1.3;
+  color: white;
+  margin: 0;
+  user-select: none;
+  background: linear-gradient(90deg, #ffffff, rgb(70, 72, 82));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+.main-2 {
+  margin-left: 100px;
+  margin-top: 30px;
+  animation: fadeInUp 1.4s ease forwards;
+  opacity: 0; /* Start hidden for animation */
+}
+.profile {
+  height: 600px;
+}
+.main-3 {
+  margin-left: 60px;
+  padding-top: 100px;
+  animation: fadeInDelayed 1.2s ease-in forwards;
+  animation-delay: 1.2s;
+  opacity: 0;
+}
+.role {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 0.8;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.role:hover {
+  color: #7f7f7c;
+  transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInDelayed {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
