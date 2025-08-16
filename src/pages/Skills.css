@@ -1,20 +1,22 @@
-.skill-contain{
-    position: relative;
-    text-align: center;
-    margin-top: 150px;
+.skill-contain {
+  position: relative;
+  text-align: center;
+  margin-top: 150px;
 }
-.skill-heading{
-    font-weight: bold;
-    font-size: 50px;
+.skill-heading {
+  font-weight: bold;
+  font-size: 80px;
+  font-family: "Playfair Display", serif;
+  color: white;
 }
-.skill-subheading{
-    font-size: 80px;
-    color: rgb(31, 30, 30);
-    font-weight: bold;
-    margin-bottom: 20px;
-    margin-top: -65px;
+.skill-subheading {
+  font-size: 100px;
+  color: rgb(31, 30, 30);
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: -120px;
 }
-.skill-box{
-    height: 800px;
-    margin-top: -300px;
+.skill-box {
+  height: 800px;
+  margin-top: -300px;
 }

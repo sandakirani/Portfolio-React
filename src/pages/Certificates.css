@@ -1,30 +1,28 @@
-.certificates-contain{
-    position: relative;
-    text-align: center;
-    margin-top: 150px;
+.certificates-contain {
+  position: relative;
+  text-align: center;
+  background-color: black;
 }
-.certificates-heading{
-    font-weight: bold;
-    font-size: 50px;
-}
-.certificates-subheading{
-    font-size: 80px;
-    color: rgb(31, 30, 30);
-    font-weight: bold;
-    margin-bottom: 20px;
-    margin-top: -65px;
+.certificates-heading {
+  font-weight: bold;
+  font-size: 80px;
+  font-family: "Playfair Display", serif;
+  background: linear-gradient(90deg, #000000, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .certificate-list {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 80px;
   margin: 100px;
 }
 
 .certificate-item {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 80px;
   flex-wrap: wrap;
 }
 
@@ -34,6 +32,7 @@
 
 .right-image {
   flex-direction: row-reverse;
+  margin-right: 100px;
 }
 
 .certificate-image-container {
@@ -42,7 +41,7 @@
 }
 
 .certificate-image {
-  width: 100%;
+  width: 450px;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -51,22 +50,32 @@
   flex: 2;
   min-width: 300px;
 }
+.left-image .certificate-text {
+  text-align: left;
+  margin-left: 80px;
+}
+
+.right-image .certificate-text {
+  text-align: right;
+  margin-right: 10px;
+}
 
 .certificate-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 5px;
+  font-size: 30px;
+  margin-bottom: 20px;
   justify-content: left;
+  margin-top: -10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 
 .certificate-issue {
   font-size: 0.95rem;
-  color: #555;
-  margin-bottom: 3px;
+  color: #777777;
+  margin-bottom: 20px;
 }
 
 .certificate-description {
-  font-size: 0.95rem;
+  font-size: 16px;
   margin-top: 10px;
 }
-

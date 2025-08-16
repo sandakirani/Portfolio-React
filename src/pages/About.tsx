@@ -9,28 +9,38 @@ export default function About() {
       <div className="about-box">
         <p className="about-subheading">About Me</p>
         <p className="about-content">
-          Hi, I'm Vihangi Sandakirani — a passionate tech explorer with a love
-          for both visual storytelling and functional design. I'm currently
-          pursuing my degree in Electronic and Computer Science, and I'm driven
-          by a deep curiosity for how things work — from the tiniest pixel in a
-          3D model to the backend logic that powers modern applications.
-          </p>
-          <p className="about-content">
-          Blending creativity with code, I specialize in 3D modeling, full-stack
-          web development, and mobile app design. Whether it's building
-          immersive 3D scenes in Blender, designing responsive user interfaces
-          in React, or developing real-time systems using Python, I love turning
-          ideas into digital experiences that are both beautiful and meaningful.
-          </p>
-          <p className="about-content">
-          I believe technology isn't just about writing code — it’s about
-          solving problems, enhancing lives, and expressing imagination. I’m
-          excited to keep learning, building, and contributing to projects that
-          make a difference.
+          I am Vihangi Sandakirani, a fourth-year undergraduate student pursuing
+          a degree in Electronic and Computer Science. With a strong passion for
+          technology, I combine visual storytelling and functional design to
+          create meaningful digital experiences. My curiosity drives me to
+          explore everything from the intricate details in 3D modeling to the
+          exciting world of AI.
+        </p>
+        <p className="about-content">
+          I have experience working with 3D design using Blender, frontend web
+          development with React, mobile app design, and real-time system
+          development in Python. I also enjoy experimenting with UI/UX concepts
+          and integrating machine learning techniques into practical
+          applications.
+        </p>
+        <p className="about-content">
+          Currently, I am expanding my knowledge in cybersecurity while
+          deepening my interest in artificial intelligence and machine learning.
+          I'm particularly passionate about building AI assistants that enhance
+          user interaction and solve real-world problems.
+        </p>
+        <p className="about-content">
+          For me, technology is more than just coding; it is a creative tool to
+          address challenges, improve lives, and build impactful solutions. I am
+          eager to continue learning, growing, and contributing to innovative
+          projects that make a positive difference.
         </p>
       </div>
 
-        <a href="/vihangi sandakirani.pdf" download className="CV"> Download Resume</a>
+      <a href="/vihangi sandakirani.pdf" download className="CV">
+        {" "}
+        Download Resume
+      </a>
 
       <div className="about-image">
         <img src={aboutprofile} alt="About image" />

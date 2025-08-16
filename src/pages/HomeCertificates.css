@@ -1,0 +1,73 @@
+.home-certificates-contain {
+  position: relative;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.home-certificates-heading {
+  font-weight: bold;
+  font-size: 80px;
+  font-family: "Playfair Display", serif;
+  color: white;
+}
+.home-certificates-subheading {
+  font-size: 100px;
+  color: rgb(31, 30, 30);
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: -120px;
+}
+.scroll-container-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  margin-top: 70px;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 10px;
+  gap: 20px;
+  max-width: 90%;
+}
+
+.cert-image {
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.cert-image:hover {
+  transform: scale(1.05);
+}
+
+.view-all-btn-wrapper {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.view-all-btn {
+  background-color: #2a2a2a;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.view-all-btn:hover {
+  background-color: #e7e7e7;
+  color: #2a2a2a;
+  border: 1px solid black;
+}

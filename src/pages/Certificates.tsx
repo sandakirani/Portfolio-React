@@ -1,6 +1,12 @@
+import { useEffect } from "react";
+import Home from "../components/Header";
+import Footer from "../components/Footer";
 import "./Certificates.css";
 
 export default function Certificates() {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to top when page loads
+  }, []);
   const certificates = [
     {
       image: "/certificates/C.E.O 2.0.jpg",
@@ -47,7 +53,8 @@ export default function Certificates() {
       image: "/certificates/ICAPS.jpg",
       title: "Smart Panel Light Transformer - Innovation Showcase",
       Issued:
-        "Presented at: 5th International Conference on Applied and Pure Sciences (ICAPS 2024) - Undergraduate Symposium, University of Kelaniya",
+        "5th International Conference on Applied and Pure Sciences (ICAPS 2024)",
+      Date: "Undergraduate Symposium, University of Kelaniya",
       description:
         "Contributed to a sustainable IoT innovation that transforms traditional panel lights into smart systems without full replacements. Demonstrated cost-effective retrofitting, mobile control, energy efficiency, and voice assistant integration.",
     },
@@ -64,13 +71,15 @@ export default function Certificates() {
 
   return (
     <div className="certificates-contain">
-      <p className="certificates-heading">Certificates</p>
-      <p className="certificates-subheading">CERTIFICATES</p>
+      <Home />
+      <p className="certificates-heading">CERTIFICATES</p>
 
       <div className="certificate-list">
         {certificates.map((cert, index) => (
           <div
-            className={`certificate-item ${index % 2 === 0 ? "left-image" : "right-image"}`}
+            className={`certificate-item ${
+              index % 2 === 0 ? "left-image" : "right-image"
+            }`}
             key={index}
           >
             <div className="certificate-image-container">
@@ -91,6 +100,7 @@ export default function Certificates() {
           </div>
         ))}
       </div>
+      <Footer />
     </div>
   );
 }
