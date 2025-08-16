@@ -1,4 +1,4 @@
-![Background](assets/background.jpg)
+![Background](readme/background.png)
 
 # Portfolio
 
