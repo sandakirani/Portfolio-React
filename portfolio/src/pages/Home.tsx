@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -12,9 +13,25 @@ import my from "../assets/home.png";
 import "./Home.css";
 
 export default function HomePage() {
+  const location = useLocation();
+
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true }); // initialize AOS
+    AOS.init({ duration: 1000, once: true });
   }, []);
+
+  // 👇 Check if navigation passed a scroll target
+  useEffect(() => {
+    if (location.state && (location.state as any).scrollTo) {
+      const id = (location.state as any).scrollTo;
+      const element = document.getElementById(id);
+      if (element) {
+        const yOffset = -200; // scroll 100px above the element
+        const y =
+          element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: "smooth" });
+      }
+    }
+  }, [location]);
 
   return (
     <div className="main-container">

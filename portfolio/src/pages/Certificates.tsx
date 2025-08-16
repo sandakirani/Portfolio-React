@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Home from "../components/Header";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./Certificates.css";
 
@@ -71,7 +71,7 @@ export default function Certificates() {
 
   return (
     <div className="certificates-contain">
-      <Home />
+        <Header />
       <p className="certificates-heading">CERTIFICATES</p>
 
       <div className="certificate-list">
@@ -100,7 +100,9 @@ export default function Certificates() {
           </div>
         ))}
       </div>
-      <Footer />
+      <div id="contact" data-aos="fade-up">
+        <Footer />
+      </div>
     </div>
   );
 }
