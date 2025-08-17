@@ -7,22 +7,14 @@ export default function Certificates() {
   }, []);
 
   const certificates = [
-    {
-      title:
-        "C.E.O 2.0 All Island Case Study Competition - Certificate of Participation",
-      Issued: "Issued by: AIESEC in University of Kelaniya",
-      Date: "Date: July 23, 2023",
-      description:
-        "Participated in the national-level C.E.O 2.0 case study competition, organized in collaboration with AIESEC in Informatics Institute of Technology and Uva Wellassa University. Engaged in strategic problem-solving and teamwork with Team GPA 5.0.",
-      link: "https://www.linkedin.com/feed/update/urn:li:activity-xxxx", // replace with your linkedin link
-    },
+    
     {
       title: "Introduction to C#",
       Issued: "Issued by: Sololearn",
       Date: "Date: July 02, 2024",
       description:
         "Achieved certification in C#, exploring variables, loops, methods, and object-oriented programming fundamentals. Strengthened programming foundation for desktop and mobile development.",
-      link: "https://www.linkedin.com/feed/update/urn:li:activity-xxxx",
+      link: "https://www.linkedin.com/posts/vihangi-sandakirani_sololearn-activity-7213798843258146816-I9g5?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvXYMkB57HmQhefMC2-tLEEPej6tEDn7Xw",
     },
     {
       title: "Introduction to HTML",
@@ -30,7 +22,7 @@ export default function Certificates() {
       Date: "Date: July 10, 2024",
       description:
         "Successfully completed a structured course covering HTML basics, elements, forms, and best practices for building static web pages.",
-      link: "https://www.linkedin.com/feed/update/urn:li:activity-xxxx",
+      link: "https://www.linkedin.com/posts/vihangi-sandakirani_sololearn-activity-7216763148320530432-Odo8?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvXYMkB57HmQhefMC2-tLEEPej6tEDn7Xw",
     },
     {
       title: "Introduction to CSS",
@@ -38,15 +30,16 @@ export default function Certificates() {
       Date: "Date: July 14, 2024",
       description:
         "Completed a beginner-friendly course on CSS, gaining hands-on experience in styling modern web pages and improving the aesthetics of front-end applications.",
-      link: "https://www.linkedin.com/feed/update/urn:li:activity-xxxx",
+      link: "https://www.linkedin.com/posts/vihangi-sandakirani_sololearn-activity-7218106748224634881-n0yD?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvXYMkB57HmQhefMC2-tLEEPej6tEDn7Xw",
     },
     {
-      title: "Introduction to C",
-      Issued: "Issued by: Sololearn",
-      Date: "Date: July 15, 2024",
+      title:
+        "C.E.O 2.0 All Island Case Study Competition - Certificate of Participation",
+      Issued: "Issued by: AIESEC in University of Kelaniya",
+      Date: "Date: July 23, 2023",
       description:
-        "Completed the beginner-level course on C programming, covering essential topics such as variables, data types, control structures, loops, functions, and arrays. This course laid the foundation for understanding structured programming and low-level memory manipulation in C.",
-      link: "https://www.linkedin.com/feed/update/urn:li:activity-xxxx",
+        "Participated in the national-level C.E.O 2.0 case study competition, organized in collaboration with AIESEC in Informatics Institute of Technology and Uva Wellassa University. Engaged in strategic problem-solving and teamwork with Team GPA 5.0.",
+      link: "https://www.linkedin.com/posts/vihangi-sandakirani_celebrating-my-new-certification-activity-7096329010384683009-5vbK?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvXYMkB57HmQhefMC2-tLEEPej6tEDn7Xw", // replace with your linkedin link
     },
     {
       title: "Smart Panel Light Transformer - Innovation Showcase",
@@ -55,7 +48,7 @@ export default function Certificates() {
       Date: "Undergraduate Symposium, University of Kelaniya",
       description:
         "Contributed to a sustainable IoT innovation that transforms traditional panel lights into smart systems without full replacements. Demonstrated cost-effective retrofitting, mobile control, energy efficiency, and voice assistant integration.",
-      link: "https://www.linkedin.com/feed/update/urn:li:activity-xxxx",
+      link: "https://www.linkedin.com/posts/vihangi-sandakirani_icaps2024-smarthome-iot-activity-7341350939166916608-UZDS?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvXYMkB57HmQhefMC2-tLEEPej6tEDn7Xw",
     },
     {
       title: "Introduction to Cyber Security",
@@ -72,7 +65,7 @@ export default function Certificates() {
       <p className="certificates-heading">Certificates</p>
       <p className="certificates-subheading">CERTIFICATES</p>
 
-      <div className="certificate-list">
+      <div className="certificate-grid">
         {certificates.map((cert, index) => (
           <div className="certificate-card" key={index}>
             <div className="certificate-text">

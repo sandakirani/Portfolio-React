@@ -42,7 +42,7 @@ export default function Projects() {
         to select a mode, choose a singer and song, set the desired pitch, and 
         start live recording with a single tap. Designed with a clean and responsive 
         UI to ensure smooth user interaction.`,
-      github: "https://github.com/sandakirani/pitchMeter",
+      github: "https://github.com/sandakirani/PitchMeter-Mobile-Frontend.git",
     },
   ];
 

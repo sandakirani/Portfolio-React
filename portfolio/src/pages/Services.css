@@ -42,7 +42,7 @@
 
 .service-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 6px 20px rgba(20, 184, 166, 0.5);
 }
 
 .service-icon {
