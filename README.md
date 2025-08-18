@@ -55,3 +55,44 @@ To get a copy of this portfolio on your local machine, follow these steps:
 
    ```bash
    git clone https://github.com/sandakirani/portfolio.git
+   ```
+
+2. **Change into the project directory:**
+
+   ```bash
+   cd portfolio
+   ```
+
+---
+
+## ▶️ How to Run
+
+After extracting the code, you can run this project locally using the following steps:
+
+1. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+2. **Start the project:**
+
+   ```bash
+   npm start
+   ```
+
+   Or, if your project uses a different start script (like `npm run dev`), use that command instead.
+
+---
+
+## 📫 Contact
+
+Feel free to reach out!
+
+- **✉️ Email:** vsandakirani@gmail.com  
+- **🔗 LinkedIn:** [Sandakirani](https://linkedin.com/in/vihangi-sandakirani)  
+- **🐙 GitHub:** [Sandakirani](https://github.com/sandakirani)
+
+---
+
+*✨ Thank you for visiting my portfolio!*
