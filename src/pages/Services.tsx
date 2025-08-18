@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./Services.css";
 import { Box, Code, Layout, Smartphone, Brain, Shield } from "lucide-react";
 
@@ -45,11 +48,15 @@ const services = [
 ];
 
 export default function Services() {
+  useEffect(() => {
+        AOS.init({ duration: 1000, once: true });
+      }, []);
+
   return (
     <section className="services-section" id="services">
       <p className="services-heading">Services</p>
       <p className="services-subheading">SERVICES</p>
-      <div className="services-container">
+      <div className="services-container" data-aos="fade-up">
         {services.map((service, index) => (
           <div className="service-card" key={index}>
             <div className="service-icon">{service.icon}</div>

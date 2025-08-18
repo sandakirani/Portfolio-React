@@ -24,10 +24,12 @@ export default function Header() {
 
   return (
     <div className="contain-div">
+      <div className="logo-wrapper">
       <div className="logo-circle">
         <img src={logo} alt="logo" className="logo-image" />
       </div>
       <span className="name">SANDAKIRANI</span>
+      </div>
       <div className="section">
         <a onClick={() => scrollToSection("home")}>Home</a>
         <a onClick={() => scrollToSection("about")}>About</a>

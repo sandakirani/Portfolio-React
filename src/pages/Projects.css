@@ -1,41 +1,48 @@
 .projects-contain {
   position: relative;
   text-align: center;
-  margin-top: -100px;
+  margin-top: 100px;
+  padding: 0 20px;
 }
+
 .projects-heading {
   font-weight: bold;
   font-size: 80px;
   font-family: "Playfair Display", serif;
   color: white;
 }
+
 .projects-subheading {
-  font-size: 80px;
+  font-size: 100px;
   color: rgb(31, 30, 30);
   font-weight: bold;
   margin-top: -120px;
 }
+
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-columns: repeat(2, 1fr);
   gap: 150px;
   justify-items: center;
   margin: 70px 100px;
 }
+
 .project-item {
   width: 100%;
   max-width: 500px;
 }
+
 .project-item video {
   width: 100%;
-  height: 300px;
+  height: 400px;
   border-radius: 10px;
 }
+
 .read-more-btn {
   display: inline-block;
   margin-top: 30px;
   padding: 6px 14px;
-  font-size: 14px;
+  font-size: 18px;
   background: #14b8a6;
   color: black;
   border-radius: 5px;
@@ -49,57 +56,78 @@
   color: #14b8a6;
   border: 1px solid #14b8a6;
 }
+
 .project-title {
-  font-size: 18px;
+  font-size: 25px;
   font-weight: bold;
   margin-top: 50px;
 }
+
 .project-description {
   font-style: italic;
   margin-top: 40px;
+  font-size: 20px;
 }
-/* Existing styles remain unchanged */
 
 /* Responsive Styles */
+
+/* Large tablets / small laptops */
 @media (max-width: 1200px) {
   .projects-heading {
     font-size: 60px;
   }
   .projects-subheading {
-    font-size: 60px;
-    margin-top: -90px;
+    font-size: 65px;
+    margin-top: -100px;
+    margin-bottom: 60px;
   }
   .project-grid {
     gap: 100px;
     margin: 50px 60px;
   }
+  .project-title {
+    font-size: 20px;
+  }
+  .project-description {
+    margin-top: 20px;
+    font-size: 16px;
+  }
 }
 
+/* Tablets */
 @media (max-width: 992px) {
   .projects-heading {
     font-size: 50px;
   }
   .projects-subheading {
-    font-size: 50px;
-    margin-top: -70px;
+    font-size: 55px;
+    margin-top: -80px;
+    margin-bottom: 50px;
   }
   .project-grid {
-    grid-template-columns: 1fr; /* Stack in one column */
-    gap: 80px;
+    grid-template-columns: 1fr;
+    gap: 70px;
     margin: 40px 40px;
   }
-  .project-item video {
-    height: auto; /* Adjust video height */
+  .project-description {
+    margin-top: 20px;
+    font-size: 14px;
   }
+   .project-title {
+    font-size: 18px;
+  }
+  
 }
 
+/* Mobile devices */
 @media (max-width: 768px) {
   .projects-heading {
     font-size: 40px;
   }
   .projects-subheading {
-    font-size: 40px;
-    margin-top: -50px;
+    font-size: 45px;
+    margin-top: -60px;
+    margin-bottom: 30px;
   }
   .project-title {
     font-size: 16px;
@@ -108,24 +136,37 @@
     margin-top: 20px;
     font-size: 14px;
   }
+  .read-more-btn {
+    font-size: 13px;
+    padding: 5px 12px;
+  }
 }
 
+/* Small mobile devices */
 @media (max-width: 480px) {
   .projects-heading {
     font-size: 30px;
   }
   .projects-subheading {
-    font-size: 30px;
+    font-size: 35px;
     margin-top: -40px;
+    margin-bottom: 20px;
   }
-  .read-more-btn {
-    font-size: 12px;
-    padding: 5px 12px;
+  .project-grid {
+    margin: 30px 20px;
+    gap: 50px;
+  }
+  .project-title {
+    font-size: 14px;
+  }
+  .project-description {
+    font-size: 13px;
   }
   .project-item {
     max-width: 100%;
   }
-  .project-title {
-    font-size: 14px;
+  .read-more-btn {
+    font-size: 12px;
+    padding: 4px 10px;
   }
 }

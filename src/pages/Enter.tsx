@@ -34,31 +34,43 @@ export default function Enter() {
     );
 }
 const styles: { [key: string]: React.CSSProperties & { [key: string]: any } } = {
-    container: {
-        backgroundColor: "black",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-        width: "100vw",
-        overflow: "hidden",
-        position: "relative",
-        flexDirection: "column",
-        gap: "5px",
+  container: {
+    backgroundColor: "black",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100vh",
+    width: "100vw",
+    overflow: "hidden",
+    position: "relative",
+    flexDirection: "column",
+    gap: "5px",
 
-        // ✅ Responsive breakpoints
-        ["@media (max-width: 768px)"]: {
-            flexDirection: "column", // stack on small screens
-            padding: "10px",
-            gap: "10px",
-        },
-        ["@media (min-width: 769px) and (max-width: 1200px)"]: {
-            flexDirection: "row", // row for tablets
-            padding: "20px",
-        },
-        ["@media (min-width: 1201px)"]: {
-            flexDirection: "row",
-            gap: "20px",
-        },
+    // ✅ Responsive breakpoints
+    ["@media (max-width: 480px)"]: {
+      flexDirection: "column",
+      padding: "10px",
+      gap: "5px",
     },
+    ["@media (min-width: 481px) and (max-width: 768px)"]: {
+      flexDirection: "column",
+      padding: "10px",
+      gap: "10px",
+    },
+    ["@media (min-width: 769px) and (max-width: 992px)"]: {
+      flexDirection: "row",
+      padding: "15px",
+      gap: "15px",
+    },
+    ["@media (min-width: 993px) and (max-width: 1200px)"]: {
+      flexDirection: "row",
+      padding: "20px",
+      gap: "20px",
+    },
+    ["@media (min-width: 1201px)"]: {
+      flexDirection: "row",
+      gap: "25px",
+      padding: "25px",
+    },
+  },
 };

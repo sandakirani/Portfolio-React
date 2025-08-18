@@ -6,49 +6,59 @@
   width: 100%;
   z-index: 1000;
 
-  background: rgba(48, 47, 47, 0.2);           /* semi-transparent black */
-  backdrop-filter: blur(20px);             /* glass blur effect */
-  -webkit-backdrop-filter: blur(10px);     /* Safari support */
+  background: rgba(48, 47, 47, 0.2); /* semi-transparent black */
+  backdrop-filter: blur(20px); /* glass blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
   border-bottom: 1px solid rgba(228, 27, 27, 0.1);
 
-  box-shadow: 0 4px 12px rgba(109, 109, 109, 0.6), 
-              0 2px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(109, 109, 109, 0.6), 0 2px 6px rgba(0, 0, 0, 0.3);
 
   padding-bottom: 40px;
   padding-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  gap: 12px;
 }
 
 .logo-circle {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 2px solid black;
   background-color: white;
   display: flex;
-  margin-left: 50px;
-  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 .logo-image {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .name {
   color: white;
-  font-size: 20px;
+  font-size: 25px;
   font-family: "Kotta One";
   font-style: italic;
-  margin-left: 20px;
-  margin-top: 30px;
   cursor: pointer;
 }
 .section {
   color: white;
-  gap: 40px;
+  gap: 60px;
   display: flex;
+  margin-right: 40px;
   font-family: "Allerta";
-  font-size: 22px;
-  margin-left: 300px;
-  margin-top: 30px;
+  font-size: 28px;
+  align-items: center;
 }
 .section a {
   margin: 0 15px;
@@ -56,7 +66,7 @@
   text-decoration: none;
   font-weight: 500;
   transition: transform 0.5s ease;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .section a:hover {
@@ -66,38 +76,29 @@
 
 /* === RESPONSIVENESS ADDED === */
 
-/* Medium screens (tablets / small laptops) */
-@media (max-width: 1024px) {
-  .contain-div {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    flex-wrap: wrap;           /* allow items to wrap */
-    justify-content: flex-start;
-  }
 
-  .logo-circle {
-    width: 35px;
-    height: 35px;
-    margin-left: 30px;
-    margin-top: 20px;
-  }
-
-  .logo-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
+@media (max-width: 1200px) {
   .name {
-    font-size: 18px;
-    margin-left: 15px;
-    margin-top: 20px;
+    font-size: 20px;
   }
 
   .section {
-    margin-left: 50px;  /* reduce big margin */
+    gap: 30px;
+    font-size: 20px;
+  }
+}
+
+/* Medium tablets / small laptops (≤992px) */
+@media (max-width: 992px) {
+  .name {
     font-size: 18px;
-    gap: 25px;
+  }
+
+  .section {
+    gap: 20px;
+    font-size: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -106,46 +107,42 @@
   .contain-div {
     flex-direction: column;
     align-items: center;
+    padding: 20px 10px;
+  }
+
+  .logo-wrapper {
+    margin-bottom: 10px;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+
+  .section {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    font-size: 16px;
+  }
+}
+
+/* Extra small screens (mobiles ≤480px) */
+@media (max-width: 480px) {
+  .contain-div {
+    flex-direction: column;
+    align-items: center;
     padding: 15px 10px;
   }
 
+  .logo-wrapper {
+    flex-direction: row;
+    gap: 10px;
+    margin: 0 auto 10px auto;
+  }
+
   .logo-circle {
-    width: 40px;
-    height: 40px;
-    margin: 10px auto 0 auto;  /* center logo */
-  }
-
-  .logo-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .name {
-    margin: 10px auto 0 auto;
-    font-size: 16px;
-  }
-
-  .section {
-    margin: 15px 0 0 0;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    font-size: 16px;
-  }
-}
-
-/* Extra small screens (mobiles) */
-@media (max-width: 480px) {
-  .logo-circle {
-    width: 35px;
-    height: 35px;
-  }
-
-  .logo-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 25px;
+    height: 25px;
   }
 
   .name {
@@ -153,8 +150,16 @@
   }
 
   .section {
-    font-size: 14px;
-    gap: 15px;
+    font-size: 11px;
+    gap: 0px;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 0 10px;
+  }
+
+  .section::-webkit-scrollbar {
+    display: none;
   }
 }
-

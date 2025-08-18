@@ -1,6 +1,13 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./Projects.css";
 
 export default function Projects() {
+  useEffect(() => {
+        AOS.init({ duration: 1000, once: true });
+      }, []);
+
   const projects = [
     {
       video: "/projects/Csharp.mp4",
@@ -52,7 +59,7 @@ export default function Projects() {
       <p className="projects-heading">Projects</p>
       <p className="projects-subheading">PROJECTS</p>
 
-      <div className="project-grid">
+      <div className="project-grid" data-aos="fade-up">
         {projects.map((proj, index) => (
           <div className="project-item" key={index}>
             <video controls>

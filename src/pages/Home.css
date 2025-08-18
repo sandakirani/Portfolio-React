@@ -2,7 +2,7 @@
   background-color: rgb(0, 0, 0);
   min-height: 100vh;
   width: 100vw;
-  margin-top: 100px;
+  margin-top: 40px;
 }
 
 .hello-contain {
@@ -11,8 +11,8 @@
 }
 
 .main-1 {
-  margin-left: 100px;
-  margin-top: 150px;
+  margin-left: 150px;
+  margin-top: 240px;
   opacity: 0;
   animation: fadeInDelayed 1s ease forwards;
   animation-delay: 1s;
@@ -47,7 +47,7 @@
 .CV {
   display: inline-block;
   margin-top: 50px;
-  padding: 10px 24px;
+  padding: 16px 24px;
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -55,7 +55,7 @@
   font-weight: bold;
   border-radius: 20px;
   transition: background-color 0.3s ease;
-  font-size: 20px;
+  font-size: 23px;
 }
 
 .CV:hover {
@@ -64,12 +64,12 @@
 }
 
 .main-2 {
-  width: 280px;
-  height: 280px;
-  border-radius: 50%; 
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.3);
-  margin-left: 140px;
-  margin-top: 200px;
+  margin-left: 160px;
+  margin-top: 240px;
   animation: fadeInUp 1.4s ease forwards;
   opacity: 0;
   display: flex;
@@ -83,36 +83,32 @@
 }
 
 .profile {
-  width: 500px;
-  height: 500px;
+  width: 550px;
+  height: 550px;
   object-fit: cover;
-  padding-right: 70px;
+  padding-right: 50px;
   padding-top: 0px;
 }
 
 .main-3 {
-  margin-left: 140px;
-  padding-top: 230px;
+  margin-left: 160px;
+  padding-top: 240px;
   opacity: 0;
   animation: fadeInDelayed 0.5s ease-in forwards;
   animation-delay: 1.2s;
 }
 
 .role {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   line-height: 1.5;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
   transition: transform 0.3s ease;
-
-  /* Typewriter Effect */
   overflow: hidden;
   white-space: nowrap;
   width: 0;
   animation: typewriter 3s steps(30, end) 1.2s forwards;
-
-  /* Gradient Text */
   background: linear-gradient(90deg, #6b6969, rgb(255, 255, 255));
   -webkit-background-clip: text;
   background-clip: text;
@@ -152,24 +148,26 @@
     width: 100%;
   }
 }
-/* ---------------- RESPONSIVENESS ---------------- */
 
+/* ------------------- RESPONSIVENESS ------------------- */
+
+/* Large tablets / small laptops */
 @media (max-width: 1200px) {
   .main-1 {
     margin-left: 60px;
-    margin-top: 100px;
+    margin-top: 150px;
   }
 
   .main-2 {
-    margin-left: 80px;
+    margin-left: 100px;
     margin-top: 150px;
     width: 220px;
     height: 220px;
   }
 
   .main-3 {
-    margin-left: 80px;
-    padding-top: 180px;
+    margin-left: 100px;
+    padding-top: 150px;
   }
 
   .name-1 {
@@ -181,6 +179,7 @@
   }
 }
 
+/* Tablets */
 @media (max-width: 992px) {
   .hello-contain {
     flex-direction: column;
@@ -217,6 +216,7 @@
   }
 }
 
+/* Mobile devices */
 @media (max-width: 768px) {
   .hello {
     font-size: 24px;
@@ -243,32 +243,43 @@
   }
 }
 
-@media (max-width: 576px) {
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .hello-contain {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
   .hello {
-    font-size: 20px;
-    letter-spacing: 3px;
-  }
-
-  .name-1 {
-    font-size: 28px;
-  }
-
-  .role {
     font-size: 18px;
   }
 
+  .name-1 {
+    font-size: 24px;
+  }
+
+  .role {
+    font-size: 16px;
+  }
+
   .main-2 {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
   }
 
   .profile {
-    width: 240px;
-    height: 240px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .main-3 {
+    margin-top: 10px;
+    padding-top: 20px;
   }
 
   .CV {
-    font-size: 16px;
-    padding: 6px 16px;
+    font-size: 14px;
+    padding: 5px 12px;
   }
 }

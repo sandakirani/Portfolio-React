@@ -1,20 +1,23 @@
+/* Main Footer Container */
 .footer-div {
   background-color: gray;
   width: 100%;
   margin-top: 150px;
 }
 
+/* Social Icons Section */
 .social-links {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 250px; /* half of footer height */
+  flex-wrap: wrap;
+  padding: 60px 0;
+  gap: 30px;
 }
 
 .social-icon {
   color: white;
   font-size: 35px;
-  margin: 0 15px;
   cursor: pointer;
   transition: transform 0.3s;
 }
@@ -23,59 +26,90 @@
   transform: scale(1.2);
 }
 
+/* Footer Bottom Section */
 .footer-footer {
   background-color: black;
   width: 100%;
-  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 150px;
+  padding: 20px;
 }
 
 .footer-text {
   color: white;
   font-size: 26px;
   letter-spacing: 2px;
+  text-align: center;
 }
-/* Responsive Footer */
-@media (max-width: 768px) {
+
+/* ========== Responsive Styles ========== */
+
+/* Large tablets / small desktops (≤1200px) */
+@media (max-width: 1200px) {
+  .social-icon {
+    font-size: 30px;
+  }
+
+  .footer-text {
+    font-size: 22px;
+  }
+}
+
+/* Medium tablets / laptops (≤992px) */
+@media (max-width: 992px) {
   .social-links {
-    flex-direction: row;   /* keep horizontal */
-    flex-wrap: wrap;       /* allows wrapping if too many */
-    height: auto;
-    padding: 20px 0;
-    gap: 15px;             /* spacing between icons */
+    gap: 20px;
+    padding: 40px 0;
   }
 
   .social-icon {
-    margin: 0 10px;
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .footer-footer {
     flex-direction: column;
     height: auto;
-    padding: 20px;
     text-align: center;
+    padding: 25px 15px;
   }
 
   .footer-text {
     font-size: 20px;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
   }
 }
 
-@media (max-width: 480px) {
+/* Small tablets / large phones (≤768px) */
+@media (max-width: 768px) {
   .social-links {
-    gap: 10px;  /* tighter spacing */
+    gap: 15px;
+    padding: 30px 0;
   }
 
   .social-icon {
-    font-size: 24px;
-    margin: 0 8px;
+    font-size: 22px;
   }
 
   .footer-text {
     font-size: 18px;
+    letter-spacing: 1px;
+  }
+}
+
+/* Mobile phones (≤480px) */
+@media (max-width: 480px) {
+  .social-links {
+    gap: 10px;
+    padding: 20px 0;
+  }
+
+  .social-icon {
+    font-size: 18px;
+  }
+
+  .footer-text {
+    font-size: 14px;
   }
 }

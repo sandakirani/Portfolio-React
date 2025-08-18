@@ -1,43 +1,44 @@
 .skill-contain {
   position: relative;
   text-align: center;
-  margin-top: -80px;
+  margin-top: -60px;
 }
+
 .skill-heading {
   font-weight: bold;
   font-size: 80px;
   font-family: "Playfair Display", serif;
   color: white;
 }
+
 .skill-subheading {
   font-size: 100px;
   color: rgb(31, 30, 30);
   font-weight: bold;
-  margin-bottom: 100px;
   margin-top: -120px;
+  margin-bottom: 100px;
 }
+
 .skill-box {
-  height: 800px;
-  margin-top: -300px;
-}
-.skill-contain {
-  text-align: center;
+  width: 100%;
+  height: 600px;
+  margin-top: -150px;
   position: relative;
+  z-index: 1;
 }
 
 .skill-buttons {
-  margin: 20px 0;
   display: flex;
   justify-content: center;
   gap: 50px;
+  margin: -50px 0 20px 0;
   position: relative;
   z-index: 2;
-  margin-top: -50px;
 }
 
 .skill-buttons button {
   padding: 10px 20px;
-  font-size: 20px;
+  font-size: 25px;
   border: none;
   border-radius: 8px;
   background: #333;
@@ -50,13 +51,6 @@
   background: #555;
 }
 
-.skill-box {
-  width: 100%;
-  height: 600px;
-  margin-top: -150px;
-  position: relative;
-  z-index: 1;
-}
 /* ---------------- RESPONSIVE DESIGN ---------------- */
 
 /* Large tablets / small laptops */
@@ -64,20 +58,25 @@
   .skill-heading {
     font-size: 60px;
   }
+
   .skill-subheading {
     font-size: 80px;
     margin-top: -90px;
     margin-bottom: 80px;
   }
+
   .skill-box {
     height: 500px;
+    margin-top: -120px;
   }
+
   .skill-buttons {
     gap: 40px;
-    margin-top: 20px;   /* increased top margin */
+    margin-top: 10px;
   }
+
   .skill-buttons button {
-    font-size: 18px;
+    font-size: 20px;
     padding: 8px 16px;
   }
 }
@@ -86,48 +85,62 @@
 @media (max-width: 992px) {
   .skill-heading {
     font-size: 50px;
+    margin-top: 100px;
   }
+
   .skill-subheading {
     font-size: 65px;
     margin-top: -70px;
     margin-bottom: 60px;
   }
+
   .skill-box {
     height: 450px;
+    margin-top: -100px;
   }
+
   .skill-buttons {
     gap: 30px;
-    margin-top: 25px;   /* increased top margin */
+    margin-top: 20px;
   }
+
   .skill-buttons button {
-    font-size: 16px;
+    font-size: 18px;
     padding: 7px 14px;
   }
 }
 
 /* Mobile devices */
 @media (max-width: 768px) {
+  .skill-contain {
+    margin-top: 30px;
+  }
+
   .skill-heading {
     font-size: 40px;
+    margin-top: 60px;
   }
+
   .skill-subheading {
     font-size: 50px;
     margin-top: -50px;
     margin-bottom: 40px;
   }
+
   .skill-box {
-    height: 400px;
+    height: 300px;
+    margin-top: -80px;
   }
+
   .skill-buttons {
-    flex-direction: row;       
-    flex-wrap: wrap;           
-    justify-content: center;   
-    gap: 15px;                 
-    margin-top: 30px;   /* increased top margin */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
   }
+
   .skill-buttons button {
-    width: auto;               
-    font-size: 16px;
+    font-size: 15px;
     padding: 6px 12px;
   }
 }
@@ -136,21 +149,27 @@
 @media (max-width: 480px) {
   .skill-heading {
     font-size: 30px;
+    margin-top: 30px;
   }
+
   .skill-subheading {
     font-size: 35px;
     margin-top: -40px;
     margin-bottom: 30px;
   }
+
   .skill-box {
-    height: 350px;
+    height: 200px;
+    margin-top: -60px;
   }
+
   .skill-buttons {
-    gap: 10px;                 
-    margin-top: 25px;   /* increased top margin */
+    gap: 10px;
+    margin-top: 25px;
   }
+
   .skill-buttons button {
-    font-size: 14px;
+    font-size: 12px;
     padding: 5px 10px;
   }
 }

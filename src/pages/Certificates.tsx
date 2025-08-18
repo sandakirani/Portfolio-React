@@ -1,7 +1,12 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./Certificates.css";
 
 export default function Certificates() {
-
+useEffect(() => {
+      AOS.init({ duration: 1000, once: true });
+    }, []);
   const certificates = [
     
     {
@@ -61,7 +66,7 @@ export default function Certificates() {
       <p className="certificates-heading">Certificates</p>
       <p className="certificates-subheading">CERTIFICATES</p>
 
-      <div className="certificate-grid">
+      <div className="certificate-grid" data-aos="fade-up">
         {certificates.map((cert, index) => (
           <div className="certificate-card" key={index}>
             <div className="certificate-text">

@@ -1,13 +1,19 @@
+import { useEffect } from "react";
 import "./About.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function About() {
+  useEffect(() => {
+      AOS.init({ duration: 1000, once: true });
+    }, []);
   return (
       <section className="about-contain" id="about">
       <p className="about-heading">About Me</p>
       <p className="about-heading2">ABOUT</p>
 
       <div className="about-box">
-        <div className="about-grid">
+        <div className="about-grid" data-aos="fade-up">
           {/* Who I Am */}
           <div className="about-card">
             <p className="about-subheading">Who I Am</p>
