@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import Home from "../components/Header";
 import About from "./About";
 import Skills from "./Skills";
-import Services from "./service";
+import Services from "./Services";
 import Projects from "./Projects";
 import Certificates from "./Certificates";
 import Footer from "../components/Footer";
