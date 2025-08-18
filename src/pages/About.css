@@ -59,3 +59,76 @@
   font-family: "Montserrat", sans-serif;
   line-height: 1.6;
 }
+/* ============================= */
+/* Responsive Styles */
+/* ============================= */
+
+@media (max-width: 1200px) {
+  .about-heading {
+    font-size: 60px;
+  }
+  .about-heading2 {
+    font-size: 80px;
+    margin-top: -90px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-contain {
+    padding: 80px 30px;
+  }
+  .about-heading {
+    font-size: 50px;
+    margin-top: 80px;
+  }
+  .about-heading2 {
+    font-size: 70px;
+    margin-top: -70px;
+    margin-bottom: 80px;
+  }
+  .about-card {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-contain {
+    padding: 60px 20px;
+  }
+  .about-heading {
+    font-size: 40px;
+    margin-top: 60px;
+  }
+  .about-heading2 {
+    font-size: 50px;
+    margin-top: -50px;
+    margin-bottom: 60px;
+  }
+  .about-subheading {
+    font-size: 20px;
+  }
+  .about-content {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-heading {
+    font-size: 32px;
+    margin-top: 40px;
+  }
+  .about-heading2 {
+    font-size: 38px;
+    margin-top: -30px;
+    margin-bottom: 40px;
+  }
+  .about-card {
+    padding: 20px;
+  }
+  .about-subheading {
+    font-size: 18px;
+  }
+  .about-content {
+    font-size: 14px;
+  }
+}

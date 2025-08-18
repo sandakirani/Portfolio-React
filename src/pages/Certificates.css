@@ -83,3 +83,60 @@
   background: transparent;
   border: 1px solid #14b8a6;
 }
+/* 📱 Mobile (small screens) */
+@media (max-width: 768px) {
+  .certificates-heading {
+    font-size: 50px;
+  }
+
+  .certificates-subheading {
+    font-size: 60px;
+    margin-top: -80px;
+  }
+
+  .certificate-grid {
+    margin: 40px 20px;
+    gap: 40px;
+    grid-template-columns: 1fr; /* single column */
+  }
+
+  .certificate-card {
+    padding: 16px;
+  }
+
+  .certificate-title {
+    font-size: 1rem;
+  }
+
+  .certificate-description {
+    font-size: 0.9rem;
+  }
+
+  .certificate-btn {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+}
+
+/* 💻 Tablets (medium screens) */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .certificates-heading {
+    font-size: 65px;
+  }
+
+  .certificates-subheading {
+    font-size: 80px;
+    margin-top: -100px;
+  }
+
+  .certificate-grid {
+    margin: 60px 40px;
+    gap: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .certificate-card {
+    padding: 18px;
+  }
+}
+

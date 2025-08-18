@@ -76,3 +76,60 @@
   font-size: 0.8rem;
   font-weight: 500;
 }
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .services-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    gap: 60px;
+    margin: 60px;
+  }
+
+  .services-heading {
+    font-size: 60px;
+  }
+
+  .services-subheading {
+    font-size: 80px;
+    margin-top: -90px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    grid-template-columns: 1fr; /* 1 column on tablets/mobiles */
+    gap: 40px;
+    margin: 40px 20px;
+  }
+
+  .services-heading {
+    font-size: 45px;
+  }
+
+  .services-subheading {
+    font-size: 60px;
+    margin-top: -60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-section {
+    padding: 3rem 1rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .services-heading {
+    font-size: 35px;
+  }
+
+  .services-subheading {
+    font-size: 45px;
+    margin-top: -40px;
+    margin-bottom: 40px;
+  }
+}

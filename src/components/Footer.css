@@ -37,3 +37,45 @@
   font-size: 26px;
   letter-spacing: 2px;
 }
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .social-links {
+    flex-direction: row;   /* keep horizontal */
+    flex-wrap: wrap;       /* allows wrapping if too many */
+    height: auto;
+    padding: 20px 0;
+    gap: 15px;             /* spacing between icons */
+  }
+
+  .social-icon {
+    margin: 0 10px;
+    font-size: 28px;
+  }
+
+  .footer-footer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-text {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-links {
+    gap: 10px;  /* tighter spacing */
+  }
+
+  .social-icon {
+    font-size: 24px;
+    margin: 0 8px;
+  }
+
+  .footer-text {
+    font-size: 18px;
+  }
+}

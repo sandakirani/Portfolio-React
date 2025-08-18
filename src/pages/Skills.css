@@ -57,3 +57,100 @@
   position: relative;
   z-index: 1;
 }
+/* ---------------- RESPONSIVE DESIGN ---------------- */
+
+/* Large tablets / small laptops */
+@media (max-width: 1200px) {
+  .skill-heading {
+    font-size: 60px;
+  }
+  .skill-subheading {
+    font-size: 80px;
+    margin-top: -90px;
+    margin-bottom: 80px;
+  }
+  .skill-box {
+    height: 500px;
+  }
+  .skill-buttons {
+    gap: 40px;
+    margin-top: 20px;   /* increased top margin */
+  }
+  .skill-buttons button {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .skill-heading {
+    font-size: 50px;
+  }
+  .skill-subheading {
+    font-size: 65px;
+    margin-top: -70px;
+    margin-bottom: 60px;
+  }
+  .skill-box {
+    height: 450px;
+  }
+  .skill-buttons {
+    gap: 30px;
+    margin-top: 25px;   /* increased top margin */
+  }
+  .skill-buttons button {
+    font-size: 16px;
+    padding: 7px 14px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .skill-heading {
+    font-size: 40px;
+  }
+  .skill-subheading {
+    font-size: 50px;
+    margin-top: -50px;
+    margin-bottom: 40px;
+  }
+  .skill-box {
+    height: 400px;
+  }
+  .skill-buttons {
+    flex-direction: row;       
+    flex-wrap: wrap;           
+    justify-content: center;   
+    gap: 15px;                 
+    margin-top: 30px;   /* increased top margin */
+  }
+  .skill-buttons button {
+    width: auto;               
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .skill-heading {
+    font-size: 30px;
+  }
+  .skill-subheading {
+    font-size: 35px;
+    margin-top: -40px;
+    margin-bottom: 30px;
+  }
+  .skill-box {
+    height: 350px;
+  }
+  .skill-buttons {
+    gap: 10px;                 
+    margin-top: 25px;   /* increased top margin */
+  }
+  .skill-buttons button {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}

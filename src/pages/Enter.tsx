@@ -33,8 +33,7 @@ export default function Enter() {
         </div>
     );
 }
-
-const styles : { [key: string]: React.CSSProperties} = {
+const styles: { [key: string]: React.CSSProperties & { [key: string]: any } } = {
     container: {
         backgroundColor: "black",
         display: "flex",
@@ -46,5 +45,20 @@ const styles : { [key: string]: React.CSSProperties} = {
         position: "relative",
         flexDirection: "column",
         gap: "5px",
+
+        // ✅ Responsive breakpoints
+        ["@media (max-width: 768px)"]: {
+            flexDirection: "column", // stack on small screens
+            padding: "10px",
+            gap: "10px",
+        },
+        ["@media (min-width: 769px) and (max-width: 1200px)"]: {
+            flexDirection: "row", // row for tablets
+            padding: "20px",
+        },
+        ["@media (min-width: 1201px)"]: {
+            flexDirection: "row",
+            gap: "20px",
+        },
     },
 };
