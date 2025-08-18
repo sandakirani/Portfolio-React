@@ -1,10 +1,6 @@
-import { useEffect } from "react";
 import "./Certificates.css";
 
 export default function Certificates() {
-  useEffect(() => {
-    window.scrollTo(0, 0); // Scrolls to top when page loads
-  }, []);
 
   const certificates = [
     
@@ -86,9 +82,6 @@ export default function Certificates() {
             </div>
           </div>
         ))}
-      </div>
-
-      <div id="contact" data-aos="fade-up">
       </div>
     </section>
   );
