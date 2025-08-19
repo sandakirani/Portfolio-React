@@ -52,13 +52,13 @@
 }
 
 .service-title {
-  font-size: 25px;
+  font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
 .service-desc {
-  font-size: 18px;
+  font-size: 0.95rem;
   color: #d1d5db;
   margin-bottom: 1rem;
 }

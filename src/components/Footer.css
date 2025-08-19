@@ -1,4 +1,3 @@
-/* Main Footer Container */
 .footer-div {
   background-color: gray;
   width: 100%;
@@ -18,6 +17,7 @@
 .social-icon {
   color: white;
   font-size: 35px;
+  margin: 0 15px;
   cursor: pointer;
   transition: transform 0.3s;
 }
@@ -30,11 +30,10 @@
 .footer-footer {
   background-color: black;
   width: 100%;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px;
-  padding: 20px;
 }
 
 .footer-text {

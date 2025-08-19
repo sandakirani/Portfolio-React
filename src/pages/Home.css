@@ -2,17 +2,21 @@
   background-color: rgb(0, 0, 0);
   min-height: 100vh;
   width: 100vw;
-  margin-top: 40px;
+  margin-top: 80px;
 }
-
 .hello-contain {
   display: flex;
-  align-items: center;
+  flex-direction: row; /* default: optional */
+  justify-content: center; /* optional: centers the 3 divs horizontally in the parent */
+  align-items: flex-start; /* or center if you want vertical center alignment */
+  gap: 40px; /* optional: spacing between the divs */
+  flex-wrap: wrap; /* optional: allows responsiveness */
 }
 
+
 .main-1 {
-  margin-left: 140px;
-  margin-top: 240px;
+  margin-left: 100px;
+  margin-top: 170px;
   opacity: 0;
   animation: fadeInDelayed 1s ease forwards;
   animation-delay: 1s;
@@ -47,7 +51,7 @@
 .CV {
   display: inline-block;
   margin-top: 50px;
-  padding: 16px 24px;
+  padding: 10px 24px;
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -55,7 +59,7 @@
   font-weight: bold;
   border-radius: 20px;
   transition: background-color 0.3s ease;
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .CV:hover {
@@ -64,12 +68,12 @@
 }
 
 .main-2 {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%; 
   border: 2px solid rgba(255, 255, 255, 0.3);
   margin-left: 140px;
-  margin-top: 240px;
+  margin-top: 220px;
   animation: fadeInUp 1.4s ease forwards;
   opacity: 0;
   display: flex;
@@ -83,32 +87,36 @@
 }
 
 .profile {
-  width: 550px;
-  height: 550px;
+  width: 500px;
+  height: 500px;
   object-fit: cover;
-  padding-right: 50px;
+  padding-right: 70px;
   padding-top: 0px;
 }
 
 .main-3 {
   margin-left: 140px;
-  padding-top: 240px;
+  padding-top: 230px;
   opacity: 0;
   animation: fadeInDelayed 0.5s ease-in forwards;
   animation-delay: 1.2s;
 }
 
 .role {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   line-height: 1.5;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
   transition: transform 0.3s ease;
+
+  /* Typewriter Effect */
   overflow: hidden;
   white-space: nowrap;
   width: 0;
   animation: typewriter 3s steps(30, end) 1.2s forwards;
+
+  /* Gradient Text */
   background: linear-gradient(90deg, #6b6969, rgb(255, 255, 255));
   -webkit-background-clip: text;
   background-clip: text;
@@ -149,24 +157,25 @@
   }
 }
 
+
 /* ------------------- RESPONSIVENESS ------------------- */
 
-/* Large tablets / small laptops */
+/* Large tablets / small laptops (≤ 1200px) */
 @media (max-width: 1200px) {
   .main-1 {
     margin-left: 60px;
-    margin-top: 150px;
+    margin-top: 100px;
   }
 
   .main-2 {
-    margin-left: 100px;
+    margin-left: 60px;
     margin-top: 150px;
     width: 220px;
     height: 220px;
   }
 
   .main-3 {
-    margin-left: 100px;
+    margin-left: 60px;
     padding-top: 150px;
   }
 
@@ -179,27 +188,28 @@
   }
 }
 
-/* Tablets */
+/* Tablets (≤ 992px) */
 @media (max-width: 992px) {
   .hello-contain {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 30px; /* spacing between stacked items */
   }
 
-  .main-1 {
-    margin: 60px 0 0 0;
+  .main-1,
+  .main-2,
+  .main-3 {
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
   }
 
   .main-2 {
-    margin: 40px 0 0 0;
     width: 200px;
     height: 200px;
-  }
-
-  .main-3 {
-    margin: 40px 0 0 0;
-    padding-top: 40px;
   }
 
   .name-1 {
@@ -216,11 +226,12 @@
   }
 }
 
-/* Mobile devices */
+/* Mobile devices (≤ 768px) */
 @media (max-width: 768px) {
   .hello {
     font-size: 24px;
     letter-spacing: 4px;
+    margin-top: 80px;
   }
 
   .name-1 {
@@ -237,18 +248,24 @@
   }
 
   .profile {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     padding-right: 0;
+  }
+
+  .CV {
+    font-size: 16px;
+    padding: 6px 16px;
   }
 }
 
-/* Small mobile devices */
+/* Small mobile devices (≤ 480px) */
 @media (max-width: 480px) {
   .hello-contain {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 20px;
   }
 
   .hello {
@@ -256,7 +273,7 @@
   }
 
   .name-1 {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   .role {
@@ -274,8 +291,7 @@
   }
 
   .main-3 {
-    margin-top: 10px;
-    padding-top: 20px;
+    padding-top: -0px;
   }
 
   .CV {
