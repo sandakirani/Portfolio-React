@@ -44,7 +44,8 @@ export default function Certificates() {
     },
     {
       title: "Smart Panel Light Transformer - Innovation Showcase",
-      Issued: "5th International Conference on Applied and Pure Sciences (ICAPS 2024)",
+      Issued:
+        "5th International Conference on Applied and Pure Sciences (ICAPS 2024)",
       Date: "Undergraduate Symposium, University of Kelaniya",
       description:
         "Contributed to a sustainable IoT innovation that transforms traditional panel lights into smart systems without full replacements. Demonstrated cost-effective retrofitting, mobile control, energy efficiency, and voice assistant integration.",
@@ -87,8 +88,14 @@ export default function Certificates() {
               <p className="certificate-title text-white font-bold text-lg sm:text-xl mb-2">
                 {cert.title}
               </p>
-              <p className="certificate-issue text-[#bbb] text-sm mb-1">{cert.Issued}</p>
-              {cert.Date && <p className="certificate-issue text-[#bbb] text-sm mb-1">{cert.Date}</p>}
+              <p className="certificate-issue text-[#bbb] text-sm mb-1">
+                {cert.Issued}
+              </p>
+              {cert.Date && (
+                <p className="certificate-issue text-[#bbb] text-sm mb-1">
+                  {cert.Date}
+                </p>
+              )}
               <p className="certificate-description text-[#ddd] text-sm sm:text-base mt-2 leading-relaxed">
                 {cert.description}
               </p>
@@ -98,7 +105,7 @@ export default function Certificates() {
                 href={cert.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center text-teal-500 text-[18px] mt-4 gap-2 hover:text-green-200 hover:scale-110 transition"
+                className="inline-flex items-center justify-start text-teal-500 text-[18px] mt-4 gap-2 hover:text-green-200 hover:scale-110 transition"
                 title="View Certificate"
               >
                 <FaCertificate className="certificate-icon" />
