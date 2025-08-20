@@ -1,8 +1,12 @@
-![Background](image/background.png)
-
 # Portfolio
 
 👩‍💻 Welcome to my personal portfolio repository! This project showcases my skills, projects, and experience as a developer.
+
+---
+
+<video src="https://github.com/user-attachments/assets/e904a060-edd0-414e-a5ec-a6ea3e2a1593" controls width="700" autoplay muted loop></video>
+
+---
 
 ## Table of Contents
 
