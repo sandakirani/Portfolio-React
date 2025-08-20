@@ -42,7 +42,6 @@ export default function Header() {
           "skills",
           "services",
           "projects",
-          "certificates",
           "contact",
         ].map((section) => (
           <a
