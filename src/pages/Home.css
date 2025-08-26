@@ -103,7 +103,7 @@
 
 .main-3 {
   margin-left: clamp(20px, 5vw, 100px);
-  padding-top: clamp(80px, 20vw, 260px);
+  padding-top: clamp(80px, 20vw, 240px);
   opacity: 0;
   animation: fadeInDelayed 0.5s ease-in forwards;
   animation-delay: 1.2s;
