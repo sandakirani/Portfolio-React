@@ -44,6 +44,14 @@ export default function Projects() {
       extraStack: ["Visual Studio Code | ", "React Native | ", "Expo"],
       github: "https://github.com/sandakirani/PitchMeter-Mobile-Frontend.git",
     },
+    {
+      // New Blender 3D Hand Motion Project (No GitHub)
+      video: "/projects/3dmodel.mp4",
+      title: "3D Hand Motion (Blender + MediaPipe)",
+      techStack: ["3D Animation", "Hand Tracking"],
+      extraStack: ["Blender | ", "MediaPipe | ", "Python"],
+      github: "", // no GitHub link
+    },
   ];
 
   return (
@@ -67,15 +75,45 @@ export default function Projects() {
             key={index}
             className="project-item bg-white/5 backdrop-blur-md border border-white/10 p-4 sm:p-6 md:p-6 lg:p-8 rounded-2xl transition-transform hover:-translate-y-2 w-full"
           >
-            {/* Image */}
+            {/* Image or Video */}
             <div className="image-container relative w-full">
-              <a href={proj.github} target="_blank" rel="noopener noreferrer">
-                <img
-                  src={proj.image}
-                  alt={proj.title}
-                  className="project-image w-full h-56 sm:h-64 md:h-72 lg:h-72 object-cover rounded-xl"
-                />
-              </a>
+              {proj.github ? (
+                <a href={proj.github} target="_blank" rel="noopener noreferrer">
+                  {proj.video ? (
+                    <video
+                      src={proj.video}
+                      autoPlay
+                      loop
+                      muted
+                      className="project-video w-full h-56 sm:h-64 md:h-72 lg:h-72 object-cover rounded-xl"
+                    />
+                  ) : (
+                    <img
+                      src={proj.image}
+                      alt={proj.title}
+                      className="project-image w-full h-56 sm:h-64 md:h-72 lg:h-72 object-cover rounded-xl"
+                    />
+                  )}
+                </a>
+              ) : (
+                // No GitHub, just show video/image
+                proj.video ? (
+                  <video
+                    src={proj.video}
+                    autoPlay
+                    loop
+                    muted
+                    className="project-video w-full h-56 sm:h-64 md:h-72 lg:h-72 object-cover rounded-xl"
+                  />
+                ) : (
+                  <img
+                    src={proj.image}
+                    alt={proj.title}
+                    className="project-image w-full h-56 sm:h-64 md:h-72 lg:h-72 object-cover rounded-xl"
+                  />
+                )
+              )}
+
               <div className="stack-overlay absolute bottom-2 left-2 flex flex-wrap gap-1 sm:gap-2">
                 {proj.techStack.map((tech, i) => (
                   <span
@@ -109,15 +147,18 @@ export default function Projects() {
                 )}
               </div>
 
-              <a
-                href={proj.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="github-link inline-flex items-center gap-2 text-teal-400 text-sm sm:text-base font-medium hover:text-gray-300 transition"
-              >
-                <FaGithub className="github-icon text-lg sm:text-2xl" />
-                <span className="github-text">GitHub</span>
-              </a>
+              {/* Only show GitHub link if it exists */}
+              {proj.github && (
+                <a
+                  href={proj.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="github-link inline-flex items-center gap-2 text-teal-400 text-sm sm:text-base font-medium hover:text-gray-300 transition"
+                >
+                  <FaGithub className="github-icon text-lg sm:text-2xl" />
+                  <span className="github-text">GitHub</span>
+                </a>
+              )}
             </div>
           </div>
         ))}
