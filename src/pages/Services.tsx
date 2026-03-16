@@ -7,7 +7,6 @@ import {
   Layout,
   Smartphone,
   Brain,
-  Shield,
   Zap,
 } from "lucide-react";
 
