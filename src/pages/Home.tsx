@@ -10,7 +10,8 @@ import Services from "./Services";
 import Projects from "./Projects";
 import Certificates from "./Certificates";
 import Footer from "../components/Footer";
-import my from "../assets/home.jpg";
+import my from "../assets/home.jpeg";
+import CV from "../../public/Vihangi-sandakirani.pdf";
 import "./Home.css";
 
 export default function HomePage() {
@@ -44,7 +45,7 @@ export default function HomePage() {
           <p className="name-1">I'm Vihangi</p>
           <p className="name-1">Sandakirani</p>
 
-          <a href="/vihangi sandakirani.pdf" download className="CV">
+          <a href={CV} download className="CV">
             Download Resume
           </a>
         </div>
@@ -54,9 +55,11 @@ export default function HomePage() {
         </div>
 
         <div className="main-3">
+          <p className="role">AI/ML Engineer</p>
           <p className="role">3D Designer</p>
-          <p className="role">Frontend Web Developer</p>
           <p className="role">Mobile App developer</p>
+          <p className="role">Game Developer</p>
+          <p className="role">UI/UX Designer</p>
         </div>
       </div>
 

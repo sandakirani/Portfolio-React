@@ -174,19 +174,24 @@ export default function Skills() {
                 />
                 <Model
                   path="/model/figma-draco.glb"
-                  position={[-4, -4, 0]}
+                  position={[-6, -4, 0]}
                   url="https://www.figma.com/"
                 />
                 <Model
                   path="/model/canva-draco.glb"
-                  position={[0, -4, 0]}
+                  position={[-2, -4, 0]}
                   url="https://www.canva.com/"
                 />
                 {/* 🔹 Photoshop */}
                 <Model
                   path="/model/ps-draco.glb"
-                  position={[4, -4, 0]}
+                  position={[2, -4, 0]}
                   url="https://www.adobe.com/products/photoshop.html"
+                />
+                <Model
+                  path="/model/unity.glb"
+                  position={[6, -4, 0]}
+                  url="https://unity.com/"
                 />
               </>
             )}

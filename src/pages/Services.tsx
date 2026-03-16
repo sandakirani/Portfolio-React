@@ -1,7 +1,15 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Box, Code, Layout, Smartphone, Brain, Shield } from "lucide-react";
+import {
+  Box,
+  Code,
+  Layout,
+  Smartphone,
+  Brain,
+  Shield,
+  Zap,
+} from "lucide-react";
 
 const services = [
   {
@@ -29,16 +37,25 @@ const services = [
     tags: ["Kotlin", "Android Studio", "React Native", "Expo"],
   },
   {
-    title: "AI/ML Learner",
-    description: "Exploring artificial intelligence and machine learning concepts.",
+    title: "AI/ML Engineer",
+    description:
+      "Developing, training, and optimizing AI/ML models for real-time applications and virtual try-on systems.",
     icon: <Brain size={32} />,
-    tags: ["Python", "TensorFlow", "PyTorch"],
+    tags: [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "OpenCV",
+      "MediaPipe",
+      "Computer Vision",
+    ],
   },
   {
-    title: "Cybersecurity Learner",
-    description: "Exploring and strengthening digital security practices.",
-    icon: <Shield size={32} />,
-    tags: ["Network Security", "Ethical Hacking"],
+    title: "Mathematical & Logical Thinker",
+    description:
+      "Applying strong mathematical and logical reasoning to design efficient algorithms and solutions.",
+    icon: <Zap size={32} />, // for example, a lightning bolt can represent logic/skills
+    tags: ["Problem Solving", "Algorithms", "Data Analysis"],
   },
 ];
 
@@ -69,8 +86,12 @@ export default function Services() {
             className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 sm:p-6 md:p-8 max-w-[400px] w-full text-left transition-transform duration-300 hover:-translate-y-2 hover:shadow-[0_6px_20px_rgba(20,184,166,0.5)]"
           >
             <div className="text-teal-500 mb-4">{service.icon}</div>
-            <h3 className="text-lg sm:text-xl md:text-xl font-semibold mb-2">{service.title}</h3>
-            <p className="text-sm sm:text-sm md:text-base text-gray-300 mb-4">{service.description}</p>
+            <h3 className="text-lg sm:text-xl md:text-xl font-semibold mb-2">
+              {service.title}
+            </h3>
+            <p className="text-sm sm:text-sm md:text-base text-gray-300 mb-4">
+              {service.description}
+            </p>
             <div className="flex flex-wrap gap-2">
               {service.tags.map((tag, i) => (
                 <span

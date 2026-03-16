@@ -32,12 +32,14 @@ export default function About() {
               Who I Am
             </p>
             <p className="text-sm sm:text-base md:text-base font-montserrat leading-relaxed">
-              I am Vihangi Sandakirani, a fourth-year undergraduate student
-              pursuing a degree in Electronic and Computer Science. With a
-              strong passion for technology, I combine visual storytelling and
-              functional design to create meaningful digital experiences. My
-              curiosity drives me to explore everything from the intricate
-              details in 3D modeling to the exciting world of AI.
+              My name is Vihangi Sandakirani and I am a fourth-year
+              undergraduate student enrolled in the Electronic and Computer
+              Science degree program. I am a tech-savvy person who enjoys the
+              combination of creative designing, practical development, and
+              mathematical problem-solving. I have been working in AI/ML model
+              building, mobile app development, and 3D design, leveraging my
+              strong math skills to create meaningful and interactive electronic
+              experiences.
             </p>
           </div>
 
@@ -47,10 +49,13 @@ export default function About() {
               Current Focus
             </p>
             <p className="text-sm sm:text-base md:text-base font-montserrat leading-relaxed">
-              I am currently expanding my knowledge in cybersecurity while
-              deepening my interest in artificial intelligence and machine
-              learning. I'm particularly passionate about building AI assistants
-              that enhance user interaction and solve real-world problems.
+              I am in the process of widening my abilities in artificial
+              intelligence and machine learning and proceeding with mobile app
+              and web development. I also like creating AI-powered applications
+              that would address real-life issues, incorporating models in
+              interactive software, experimenting with 3D design and
+              visualization, and utilizing mathematical and logical reasoning
+              when creating effective, innovative solutions.
             </p>
           </div>
 
@@ -60,11 +65,11 @@ export default function About() {
               Vision
             </p>
             <p className="text-sm sm:text-base md:text-base font-montserrat leading-relaxed">
-              For me, technology is more than just coding; it is a creative tool
-              to address challenges, improve lives, and build impactful
-              solutions. I am eager to continue learning, growing, and
-              contributing to innovative projects that make a positive
-              difference.
+              I view technology as an analytical and creative approach to
+              solving problems, providing better experiences and solutions that
+              are effective. I strive to mix AI, mobile apps, 3D, powerful
+              mathematical and logical thinking to create innovative software,
+              easy to use.
             </p>
           </div>
 
@@ -74,11 +79,12 @@ export default function About() {
               Mission
             </p>
             <p className="text-sm sm:text-base md:text-base font-montserrat leading-relaxed">
-              My mission is to innovate and build impactful software solutions
-              that bridge the gap between technology and human needs. With a
-              strong foundation in electronic and computer science, I strive to
-              continuously grow as a developer while contributing to real-world
-              projects that make a positive difference.
+              My mission will be to create AI-based interactive and mobile-first
+              solutions that can tangibly impact a difference. Using my skills
+              as a mathematical and logical thinker, accompanied by a
+              substantial background in electronic and computer science, I
+              expect to participate in projects in the real world as I
+              constantly develop as a well-rounded developer.
             </p>
           </div>
         </div>
