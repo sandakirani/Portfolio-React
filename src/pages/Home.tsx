@@ -11,7 +11,6 @@ import Projects from "./Projects";
 import Certificates from "./Certificates";
 import Footer from "../components/Footer";
 import my from "../assets/home.jpeg";
-import CV from "../../public/Vihangi-sandakirani.pdf";
 import "./Home.css";
 
 export default function HomePage() {
@@ -44,10 +43,6 @@ export default function HomePage() {
           <p className="hello">HELLO!</p>
           <p className="name-1">I'm Vihangi</p>
           <p className="name-1">Sandakirani</p>
-
-          <a href={CV} download className="CV">
-            Download Resume
-          </a>
         </div>
 
         <div className="main-2">

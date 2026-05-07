@@ -51,27 +51,6 @@
   animation: fadeInUp 1.2s ease forwards;
 }
 
-/* -------------------- Button -------------------- */
-
-.CV {
-  display: inline-block;
-  margin-top: clamp(20px, 5vw, 50px);
-  padding: clamp(6px, 1vw, 10px) clamp(12px, 2vw, 24px);
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  border: 1px solid white;
-  font-weight: bold;
-  border-radius: 20px;
-  transition: background-color 0.3s ease;
-  font-size: clamp(14px, 2vw, 20px);
-}
-
-.CV:hover {
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-}
-
 /* -------------------- Profile Image -------------------- */
 
 .main-2 {
@@ -193,11 +172,6 @@
   .role {
     font-size: clamp(18px, 4vw, 24px);
   }
-
-  .CV {
-    font-size: clamp(14px, 3vw, 18px);
-    padding: clamp(6px, 1.5vw, 8px) clamp(12px, 2vw, 20px);
-  }
 }
 
 /* Mobile devices */
@@ -219,11 +193,6 @@
 
   .role {
     font-size: clamp(14px, 4vw, 20px);
-  }
-
-  .CV {
-    font-size: clamp(12px, 3vw, 16px);
-    padding: clamp(5px, 1.5vw, 6px) clamp(10px, 2vw, 16px);
   }
 }
 
@@ -249,10 +218,5 @@
 
   .role {
     font-size: clamp(12px, 4vw, 16px);
-  }
-
-  .CV {
-    font-size: clamp(10px, 3vw, 14px);
-    padding: clamp(4px, 1.5vw, 5px) clamp(8px, 2vw, 12px);
   }
 }
