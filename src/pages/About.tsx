@@ -27,64 +27,62 @@ export default function About() {
           data-aos="fade-up"
         >
           {/* Who I Am */}
-          <div className="bg-white/5 backdrop-blur-md border border-white/10 p-4 sm:p-6 md:p-8 rounded-2xl shadow-md hover:-translate-y-1 sm:hover:-translate-y-2 transition-transform duration-300">
-            <p className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 font-raleway">
+          <div className="bg-white/5 backdrop-blur-md border border-white/10 p-4 sm:p-6 md:p-8 rounded-2xl shadow-md hover:-translate-y-1 sm:hover:-translate-y-2 transition-transform duration-300 hover:border-teal-500/50 group">
+            <p className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 font-raleway relative inline-block">
               Who I Am
+              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-teal-400/50 group-hover:w-full transition-all duration-500"></span>
             </p>
             <p className="text-sm sm:text-base md:text-base font-montserrat leading-relaxed">
-              My name is Vihangi Sandakirani and I am a fourth-year
-              undergraduate student enrolled in the Electronic and Computer
-              Science degree program. I am a tech-savvy person who enjoys the
-              combination of creative designing, practical development, and
-              mathematical problem-solving. I have been working in AI/ML model
-              building, mobile app development, and 3D design, leveraging my
-              strong math skills to create meaningful and interactive electronic
-              experiences.
+              I'm <span className="text-teal-300 font-semibold">Vihangi Sandakirani</span>, a fourth-year undergraduate student in Electronic and Computer Science. 
+              I'm deeply passionate about the intersection of <span className="text-teal-400 font-semibold">Artificial Intelligence</span> and 
+              <span className="text-teal-300 font-semibold"> UI/UX Design</span>. I firmly believe that exceptional technology should be both 
+              intelligent and intuitive seamlessly blending powerful AI capabilities with beautiful, 
+              human-centered interfaces that people genuinely love to use.
             </p>
           </div>
 
           {/* Current Focus */}
-          <div className="bg-white/5 backdrop-blur-md border border-white/10 p-4 sm:p-6 md:p-8 rounded-2xl shadow-md hover:-translate-y-1 sm:hover:-translate-y-2 transition-transform duration-300">
-            <p className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 font-raleway">
+          <div className="bg-white/5 backdrop-blur-md border border-white/10 p-4 sm:p-6 md:p-8 rounded-2xl shadow-md hover:-translate-y-1 sm:hover:-translate-y-2 transition-transform duration-300 hover:border-teal-500/50 group">
+            <p className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 font-raleway relative inline-block">
               Current Focus
+              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-teal-400/50 group-hover:w-full transition-all duration-500"></span>
             </p>
             <p className="text-sm sm:text-base md:text-base font-montserrat leading-relaxed">
-              I am in the process of widening my abilities in artificial
-              intelligence and machine learning and proceeding with mobile app
-              and web development. I also like creating AI-powered applications
-              that would address real-life issues, incorporating models in
-              interactive software, experimenting with 3D design and
-              visualization, and utilizing mathematical and logical reasoning
-              when creating effective, innovative solutions.
+              I'm currently immersing myself in <span className="text-teal-400 font-semibold">machine learning model development</span> and 
+              <span className="text-teal-300 font-semibold"> user-centered design principles</span>. My primary focus revolves around creating 
+              AI-powered applications that aren't just intelligent, but genuinely delightful to interact with. 
+              I strive to make complex AI systems accessible through thoughtful, minimalist interfaces that 
+              prioritize user needs above all else.
             </p>
           </div>
 
           {/* Vision */}
-          <div className="bg-white/5 backdrop-blur-md border border-white/10 p-4 sm:p-6 md:p-8 rounded-2xl shadow-md hover:-translate-y-1 sm:hover:-translate-y-2 transition-transform duration-300">
-            <p className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 font-raleway">
+          <div className="bg-white/5 backdrop-blur-md border border-white/10 p-4 sm:p-6 md:p-8 rounded-2xl shadow-md hover:-translate-y-1 sm:hover:-translate-y-2 transition-transform duration-300 hover:border-teal-500/50 group">
+            <p className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 font-raleway relative inline-block">
               Vision
+              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-teal-400/50 group-hover:w-full transition-all duration-500"></span>
             </p>
             <p className="text-sm sm:text-base md:text-base font-montserrat leading-relaxed">
-              I view technology as an analytical and creative approach to
-              solving problems, providing better experiences and solutions that
-              are effective. I strive to mix AI, mobile apps, 3D, powerful
-              mathematical and logical thinking to create innovative software,
-              easy to use.
+              I envision a future where <span className="text-teal-400 font-semibold">AI technology</span> and 
+              <span className="text-teal-300 font-semibold"> exceptional design</span> exist in perfect harmony. My aspiration is to 
+              bridge the gap between sophisticated algorithms and meaningful human experiences crafting software that's 
+              both intellectually powerful and emotionally resonant. I dream of creating interfaces that feel less like 
+              tools and more like natural extensions of human thought.
             </p>
           </div>
 
           {/* Mission */}
-          <div className="bg-white/5 backdrop-blur-md border border-white/10 p-4 sm:p-6 md:p-8 rounded-2xl shadow-md hover:-translate-y-1 sm:hover:-translate-y-2 transition-transform duration-300">
-            <p className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 font-raleway">
+          <div className="bg-white/5 backdrop-blur-md border border-white/10 p-4 sm:p-6 md:p-8 rounded-2xl shadow-md hover:-translate-y-1 sm:hover:-translate-y-2 transition-transform duration-300 hover:border-teal-500/50 group">
+            <p className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 font-raleway relative inline-block">
               Mission
+              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-teal-400/50 group-hover:w-full transition-all duration-500"></span>
             </p>
             <p className="text-sm sm:text-base md:text-base font-montserrat leading-relaxed">
-              My mission will be to create AI-based interactive and mobile-first
-              solutions that can tangibly impact a difference. Using my skills
-              as a mathematical and logical thinker, accompanied by a
-              substantial background in electronic and computer science, I
-              expect to participate in projects in the real world as I
-              constantly develop as a well-rounded developer.
+              My mission is to democratize AI through <span className="text-teal-400 font-semibold">intuitive, human-centered design</span>. 
+              I'm committed to building AI-powered applications that solve genuine real-world problems without 
+              overwhelming or intimidating users. By combining deep technical knowledge with profound empathy 
+              for human needs, I strive to create digital experiences that are simultaneously powerful, simple, 
+              accessible, and truly transformative.
             </p>
           </div>
         </div>

@@ -10,28 +10,12 @@ export default function Certificates() {
 
   const certificates = [
     {
-      title: "Introduction to C#",
-      Issued: "Issued by: Sololearn",
-      Date: "Date: July 02, 2024",
+      title: "🏆 SDG SPRINTS Challenge - Winners (BIN MATRIX)",
+      Issued: "Issued by: IEEE Sri Lanka Section SIGHT",
+      Date: "Date: February 2026",
       description:
-        "Achieved certification in C#, exploring variables, loops, methods, and object-oriented programming fundamentals. Strengthened programming foundation for desktop and mobile development.",
-      link: "https://www.linkedin.com/posts/vihangi-sandakirani_sololearn-activity-7213798843258146816-I9g5",
-    },
-    {
-      title: "Introduction to HTML",
-      Issued: "Issued by: Sololearn",
-      Date: "Date: July 10, 2024",
-      description:
-        "Successfully completed a structured course covering HTML basics, elements, forms, and best practices for building static web pages.",
-      link: "https://www.linkedin.com/posts/vihangi-sandakirani_sololearn-activity-7216763148320530432-Odo8",
-    },
-    {
-      title: "Introduction to CSS",
-      Issued: "Issued by: Sololearn",
-      Date: "Date: July 14, 2024",
-      description:
-        "Completed a beginner-friendly course on CSS, gaining hands-on experience in styling modern web pages and improving the aesthetics of front-end applications.",
-      link: "https://www.linkedin.com/posts/vihangi-sandakirani_sololearn-activity-7218106748224634881-n0yD",
+        "Team V.STAY secured the top spot with our project BIN MATRIX - a smart waste management system ensuring 'Clean Cities' never come at the cost of unsafe hands. The solution integrates AI and IoT for sustainable waste management, contributing to SDG 11 (Sustainable Cities), SDG 8 (Decent Work), SDG 3 (Good Health), and SDG 12 (Responsible Consumption).",
+      link: "https://www.linkedin.com/feed/update/urn:li:activity:7423921184578400257/",
     },
     {
       title:
@@ -50,14 +34,6 @@ export default function Certificates() {
       description:
         "Contributed to a sustainable IoT innovation that transforms traditional panel lights into smart systems without full replacements. Demonstrated cost-effective retrofitting, mobile control, energy efficiency, and voice assistant integration.",
       link: "https://www.linkedin.com/posts/vihangi-sandakirani_icaps2024-smarthome-iot-activity-7341350939166916608-UZDS",
-    },
-    {
-      title: "Introduction to Cyber Security",
-      Issued: "Issued by: Simplilearn",
-      Date: "Date: August 05, 2025",
-      description:
-        "Completed the foundational course in Cyber Security, covering key areas such as digital threats, risk mitigation, and data protection. This marks the first step into the world of securing digital systems and networks.",
-      link: "https://simpli-web.app.link/e/WoskoQO2QVb",
     },
   ];
 
@@ -82,34 +58,55 @@ export default function Certificates() {
         {certificates.map((cert, index) => (
           <div
             key={index}
-            className="certificate-card bg-[#111] p-5 sm:p-6 md:p-8 rounded-2xl shadow-lg flex flex-col justify-between hover:-translate-y-1 sm:hover:-translate-y-2 transition-transform duration-300 w-full max-w-[400px] mx-auto"
+            className="certificate-card bg-gradient-to-br from-[#111] to-[#1a1a1a] p-5 sm:p-6 md:p-8 rounded-2xl shadow-lg flex flex-col justify-between hover:-translate-y-2 hover:shadow-teal-500/10 transition-all duration-300 w-full max-w-[400px] mx-auto border border-white/5 hover:border-teal-500/30 group"
           >
-            <div className="certificate-text">
-              <p className="certificate-title text-white font-bold text-lg sm:text-xl mb-2">
-                {cert.title}
-              </p>
-              <p className="certificate-issue text-[#bbb] text-sm mb-1">
-                {cert.Issued}
-              </p>
-              {cert.Date && (
-                <p className="certificate-issue text-[#bbb] text-sm mb-1">
-                  {cert.Date}
+            {/* Decorative top line */}
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-teal-500/0 via-teal-500/50 to-teal-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-t-2xl"></div>
+            
+            <div className="certificate-text relative">
+              {/* Title with icon decoration */}
+              <div className="flex items-start gap-2 mb-3">
+                <div className="w-1 h-6 bg-teal-500/30 rounded-full mt-1 group-hover:h-8 transition-all duration-300"></div>
+                <p className="certificate-title text-white font-bold text-lg sm:text-xl leading-tight">
+                  {cert.title}
                 </p>
-              )}
-              <p className="certificate-description text-[#ddd] text-sm sm:text-base mt-2 leading-relaxed">
+              </div>
+              
+              {/* Issuer with subtle icon */}
+              <div className="ml-3 pl-1 border-l-2 border-teal-500/20 mb-2">
+                <p className="certificate-issue text-teal-300/80 text-sm mb-1 font-medium">
+                  {cert.Issued}
+                </p>
+                {cert.Date && (
+                  <p className="certificate-date text-gray-400 text-xs mb-1">
+                    📅 {cert.Date}
+                  </p>
+                )}
+              </div>
+              
+              {/* Description with improved spacing */}
+              <p className="certificate-description text-gray-300 text-sm sm:text-base mt-3 leading-relaxed">
                 {cert.description}
               </p>
             </div>
+            
+            {/* Link with improved styling */}
             {cert.link && (
               <a
                 href={cert.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-start text-teal-500 text-[18px] mt-4 gap-2 hover:text-green-200 hover:scale-110 transition"
+                className="inline-flex items-center justify-start text-teal-400 text-[18px] mt-6 gap-2 hover:text-teal-300 transition-all duration-300 group/link w-max"
                 title="View Certificate"
               >
-                <FaCertificate className="certificate-icon" />
-                <span className="text-sm sm:text-base">View Certificate</span>
+                <div className="relative">
+                  <FaCertificate className="certificate-icon text-xl group-hover/link:scale-110 transition-transform duration-300" />
+                  <div className="absolute inset-0 bg-teal-400/20 blur-md opacity-0 group-hover/link:opacity-100 transition-opacity duration-300 rounded-full"></div>
+                </div>
+                <span className="text-sm sm:text-base relative">
+                  View Certificate
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-teal-400 group-hover/link:w-full transition-all duration-300"></span>
+                </span>
               </a>
             )}
           </div>

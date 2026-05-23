@@ -52,8 +52,6 @@ export default function HomePage() {
         <div className="main-3">
           <p className="role">AI/ML Engineer</p>
           <p className="role">3D Designer</p>
-          <p className="role">Mobile App developer</p>
-          <p className="role">Game Developer</p>
           <p className="role">UI/UX Designer</p>
         </div>
       </div>
